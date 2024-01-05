@@ -1,6 +1,14 @@
 import React from 'react'
 import Pic1 from "../images/pic-1.jpg"
 import App from "../App.jsx"
+import { IoMdClose } from "react-icons/io";
+import { FaHome } from "react-icons/fa";
+import { FaQuestion } from "react-icons/fa";
+import { FaGraduationCap } from "react-icons/fa";
+import { FaChalkboardTeacher } from "react-icons/fa";
+import { TfiHeadphoneAlt } from "react-icons/tfi";
+
+
 const SideBar = () => {
 
     const handleCloseButtonClick = () => {
@@ -14,8 +22,9 @@ const SideBar = () => {
     return (
         <div className="side-bar">
 
-            <div id="close-btn">
-                <i className="fas fa-times"></i>
+            <div id="close-btn" onClick={handleCloseButtonClick}>
+                <i className="fas fa-times"><IoMdClose />
+                </i>
             </div>
 
             <div className="profile">
@@ -26,11 +35,16 @@ const SideBar = () => {
             </div>
 
             <nav className="navbar">
-                <a href={<App />}><i className="fas fa-home"></i><span>home</span></a>
-                <a href="about.html"><i className="fas fa-question"></i><span>about</span></a>
-                <a href="courses.html"><i className="fas fa-graduation-cap"></i><span>courses</span></a>
-                <a href="teachers.html"><i className="fas fa-chalkboard-user"></i><span>teachers</span></a>
-                <a href="contact.html"><i className="fas fa-headset"></i><span>contact us</span></a>
+                <a href="home.html"><i className="fas fa-home"><FaHome />
+                </i><span>home</span></a>
+                <a href="about.html"><i className="fas fa-question"><FaQuestion />
+                </i><span>about</span></a>
+                <a href="courses.html"><i className="fas fa-graduation-cap"><FaGraduationCap />
+                </i><span>courses</span></a>
+                <a href="teachers.html"><i className="fas fa-chalkboard-user"><FaChalkboardTeacher />
+                </i><span>teachers</span></a>
+                <a href="contact.html"><i className="fas fa-headset"><TfiHeadphoneAlt />
+                </i><span>contact us</span></a>
             </nav>
         </div>
     )
