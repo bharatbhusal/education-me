@@ -26,9 +26,11 @@ const App = () => {
         <div>
             <Header />
             <SideBar />
+            <div>
 
-            <QuickOptions />
-            <Courses />
+                <QuickOptions />
+                <Courses />
+            </div>
 
             <Footer />
         </div>
