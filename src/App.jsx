@@ -6,6 +6,7 @@ import QuickOptions from './components/home/QuickOptions'
 import Courses from './pages/Courses'
 import About from './pages/About'
 import Teachers from './pages/Teachers'
+import TeachProfile from './pages/TeacherProfile'
 
 const App = () => {
 
@@ -30,7 +31,8 @@ const App = () => {
             <SideBar />
             <div>
 
-                <Teachers />
+                {/* <Teachers /> */}
+                <TeachProfile />
                 {/* <About /> */}
                 {/* <QuickOptions /> */}
                 {/* <Courses /> */}
