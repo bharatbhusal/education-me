@@ -12,6 +12,7 @@ import Login from './pages/Login'
 import PlayList from './pages/Playlist'
 import Profile from './pages/Profile'
 import Register from './pages/Register'
+import Update from './pages/Update'
 
 const App = () => {
 
@@ -44,7 +45,8 @@ const App = () => {
                 {/* <QuickOptions /> */}
                 {/* <Courses /> */}
                 {/* <Profile /> */}
-                <Register />
+                {/* <Register /> */}
+                <Update />
             </div>
 
             <Footer />
