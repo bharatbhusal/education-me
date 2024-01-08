@@ -1,64 +1,36 @@
 import React from 'react'
 
-const playlist = () => {
+import Pic1 from '../images/pic-1.jpg'
+import Pic2 from '../images/pic-2.jpg'
+import Pic3 from '../images/pic-3.jpg'
+import Pic4 from '../images/pic-4.jpg'
+import Pic5 from '../images/pic-5.jpg'
+import Pic6 from '../images/pic-6.jpg'
+import Pic7 from '../images/pic-7.jpg'
+import Pic8 from '../images/pic-8.jpg'
+import Pic9 from '../images/pic-9.jpg'
+
+
+import Thumb1 from '../images/thumb-1.png'
+import Thumb2 from '../images/thumb-2.png'
+import Thumb3 from '../images/thumb-3.png'
+import Thumb4 from '../images/thumb-4.png'
+import Thumb5 from '../images/thumb-5.png'
+import Thumb6 from '../images/thumb-6.png'
+import Thumb7 from '../images/thumb-7.png'
+import Thumb8 from '../images/thumb-8.png'
+import Thumb9 from '../images/thumb-9.png'
+
+import Post11 from '../images/post-1-1.png'
+import Post12 from '../images/post-1-2.png'
+import Post13 from '../images/post-1-3.png'
+import Post14 from '../images/post-1-4.png'
+import Post15 from '../images/post-1-5.png'
+import Post16 from '../images/post-1-6.png'
+
+const Playlist = () => {
    return (
       <div>
-
-         <header class="header">
-
-            <section class="flex">
-
-               <a href="home.html" class="logo">Educa.</a>
-
-               <form action="search.html" method="post" class="search-form">
-                  <input type="text" name="search_box" required placeholder="search courses..." maxlength="100" />
-                  <button type="submit" class="fas fa-search"></button>
-               </form>
-
-               <div class="icons">
-                  <div id="menu-btn" class="fas fa-bars"></div>
-                  <div id="search-btn" class="fas fa-search"></div>
-                  <div id="user-btn" class="fas fa-user"></div>
-                  <div id="toggle-btn" class="fas fa-sun"></div>
-               </div>
-
-               <div class="profile">
-                  <img src="images/pic-1.jpg" class="image" alt="" />
-                  <h3 class="name">shaikh anas</h3>
-                  <p class="role">studen</p>
-                  <a href="profile.html" class="btn">view profile</a>
-                  <div class="flex-btn">
-                     <a href="login.html" class="option-btn">login</a>
-                     <a href="register.html" class="option-btn">register</a>
-                  </div>
-               </div>
-
-            </section>
-
-         </header>
-
-         <div class="side-bar">
-
-            <div id="close-btn">
-               <i class="fas fa-times"></i>
-            </div>
-
-            <div class="profile">
-               <img src="images/pic-1.jpg" class="image" alt="" />
-               <h3 class="name">shaikh anas</h3>
-               <p class="role">studen</p>
-               <a href="profile.html" class="btn">view profile</a>
-            </div>
-
-            <nav class="navbar">
-               <a href="home.html"><i class="fas fa-home"></i><span>home</span></a>
-               <a href="about.html"><i class="fas fa-question"></i><span>about</span></a>
-               <a href="courses.html"><i class="fas fa-graduation-cap"></i><span>courses</span></a>
-               <a href="teachers.html"><i class="fas fa-chalkboard-user"></i><span>teachers</span></a>
-               <a href="contact.html"><i class="fas fa-headset"></i><span>contact us</span></a>
-            </nav>
-
-         </div>
 
          <section class="playlist-details">
 
@@ -72,13 +44,13 @@ const playlist = () => {
                   </form>
 
                   <div class="thumb">
-                     <img src="images/thumb-1.png" alt="" />
+                     <img src={Thumb1} alt="" />
                      <span>10 videos</span>
                   </div>
                </div>
                <div class="column">
                   <div class="tutor">
-                     <img src="images/pic-2.jpg" alt="" />
+                     <img src={Pic2} alt="" />
                      <div>
                         <h3>john deo</h3>
                         <span>21-10-2022</span>
@@ -103,37 +75,37 @@ const playlist = () => {
 
                <a class="box" href="watch-video.html">
                   <i class="fas fa-play"></i>
-                  <img src="images/post-1-1.png" alt="" />
+                  <img src={Post11} alt="" />
                   <h3>complete HTML tutorial (part 01)</h3>
                </a>
 
                <a class="box" href="watch-video.html">
                   <i class="fas fa-play"></i>
-                  <img src="images/post-1-2.png" alt="" />
+                  <img src={Post12} alt="" />
                   <h3>complete HTML tutorial (part 02)</h3>
                </a>
 
                <a class="box" href="watch-video.html">
                   <i class="fas fa-play"></i>
-                  <img src="images/post-1-3.png" alt="" />
+                  <img src={Post13} alt="" />
                   <h3>complete HTML tutorial (part 03)</h3>
                </a>
 
                <a class="box" href="watch-video.html">
                   <i class="fas fa-play"></i>
-                  <img src="images/post-1-4.png" alt="" />
+                  <img src={Post14} alt="" />
                   <h3>complete HTML tutorial (part 04)</h3>
                </a>
 
                <a class="box" href="watch-video.html">
                   <i class="fas fa-play"></i>
-                  <img src="images/post-1-5.png" alt="" />
+                  <img src={Post15} alt="" />
                   <h3>complete HTML tutorial (part 05)</h3>
                </a>
 
                <a class="box" href="watch-video.html">
                   <i class="fas fa-play"></i>
-                  <img src="images/post-1-6.png" alt="" />
+                  <img src={Post16} alt="" />
                   <h3>complete HTML tutorial (part 06)</h3>
                </a>
 
@@ -141,25 +113,8 @@ const playlist = () => {
 
          </section>
 
-
-
-
-
-
-
-
-
-
-
-
-
-         <footer class="footer">
-
-            &copy; copyright @ 2022 by <span>mr. web designer</span> | all rights reserved!
-
-         </footer>
       </div>
    )
 }
 
-export default playlist
+export default Playlist

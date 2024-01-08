@@ -9,74 +9,24 @@ import Thumb6 from '../images/thumb-6.png'
 import Thumb7 from '../images/thumb-7.png'
 import Thumb8 from '../images/thumb-8.png'
 import Thumb9 from '../images/thumb-9.png'
+import ContactImg from "../images/contact-img.svg"
+import { FaPhone } from "react-icons/fa";
+import { FaEnvelope } from "react-icons/fa";
+import { FaMapLocationDot } from "react-icons/fa6";
+
+
+
 
 const Contact = () => {
    return (
       <div>
-
-
-         <header class="header">
-
-            <section class="flex">
-
-               <a href="home.html" class="logo">Educa.</a>
-
-               <form action="search.html" method="post" class="search-form">
-                  <input type="text" name="search_box" required placeholder="search courses..." maxlength="100" />
-                  <button type="submit" class="fas fa-search"></button>
-               </form>
-
-               <div class="icons">
-                  <div id="menu-btn" class="fas fa-bars"></div>
-                  <div id="search-btn" class="fas fa-search"></div>
-                  <div id="user-btn" class="fas fa-user"></div>
-                  <div id="toggle-btn" class="fas fa-sun"></div>
-               </div>
-
-               <div class="profile">
-                  <img src={Pic1} class="image" alt="" />
-                  <h3 class="name">shaikh anas</h3>
-                  <p class="role">studen</p>
-                  <a href="profile.html" class="btn">view profile</a>
-                  <div class="flex-btn">
-                     <a href="login.html" class="option-btn">login</a>
-                     <a href="register.html" class="option-btn">register</a>
-                  </div>
-               </div>
-
-            </section>
-
-         </header>
-
-         <div class="side-bar">
-
-            <div id="close-btn">
-               <i class="fas fa-times"></i>
-            </div>
-
-            <div class="profile">
-               <img src="images/pic-1.jpg" class="image" alt="" />
-               <h3 class="name">shaikh anas</h3>
-               <p class="role">studen</p>
-               <a href="profile.html" class="btn">view profile</a>
-            </div>
-
-            <nav class="navbar">
-               <a href="home.html"><i class="fas fa-home"></i><span>home</span></a>
-               <a href="about.html"><i class="fas fa-question"></i><span>about</span></a>
-               <a href="courses.html"><i class="fas fa-graduation-cap"></i><span>courses</span></a>
-               <a href="teachers.html"><i class="fas fa-chalkboard-user"></i><span>teachers</span></a>
-               <a href="contact.html"><i class="fas fa-headset"></i><span>contact us</span></a>
-            </nav>
-
-         </div>
 
          <section class="contact">
 
             <div class="row">
 
                <div class="image">
-                  <img src="images/contact-img.svg" alt="" />
+                  <img src={ContactImg} alt="" />
                </div>
 
                <form action="" method="post">
@@ -93,21 +43,24 @@ const Contact = () => {
             <div class="box-container">
 
                <div class="box">
-                  <i class="fas fa-phone"></i>
+                  <i class="fas fa-phone"><FaPhone />
+                  </i>
                   <h3>phone number</h3>
                   <a href="tel:1234567890">123-456-7890</a>
                   <a href="tel:1112223333">111-222-3333</a>
                </div>
 
                <div class="box">
-                  <i class="fas fa-envelope"></i>
+                  <i class="fas fa-envelope"><FaEnvelope />
+                  </i>
                   <h3>email address</h3>
                   <a href="mailto:shaikhanas@gmail.com">shaikhanas@gmail.come</a>
                   <a href="mailto:anasbhai@gmail.com">anasbhai@gmail.come</a>
                </div>
 
                <div class="box">
-                  <i class="fas fa-map-marker-alt"></i>
+                  <i class="fas fa-map-marker-alt"><FaMapLocationDot />
+                  </i>
                   <h3>office address</h3>
                   <a href="#">flat no. 1, a-1 building, jogeshwari, mumbai, india - 400104</a>
                </div>
@@ -115,13 +68,6 @@ const Contact = () => {
             </div>
 
          </section>
-
-         <footer class="footer">
-
-            &copy; copyright @ 2022 by <span>mr. web designer</span> | all rights reserved!
-
-         </footer>
-
 
       </div>
    )

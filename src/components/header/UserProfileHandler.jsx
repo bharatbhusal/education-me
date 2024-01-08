@@ -1,10 +1,11 @@
 import React from 'react'
 import { CiUser, CiDark } from 'react-icons/ci';
+import Pic1 from '../../images/pic-1.jpg'
 const UserProfile = () => {
     return (
 
         <div className="profile">
-            <img src="images/pic-1.jpg" className="image" alt="" />
+            <img src={Pic1} className="image" alt="" />
             <h3 className="name">shaikh anas</h3>
             <p className="role">student</p>
             <a href="profile.html" className="btn">

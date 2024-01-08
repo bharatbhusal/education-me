@@ -7,6 +7,9 @@ import Courses from './pages/Courses'
 import About from './pages/About'
 import Teachers from './pages/Teachers'
 import TeachProfile from './pages/TeacherProfile'
+import Contact from './pages/Contact'
+import Login from './pages/Login'
+import PlayList from './pages/Playlist'
 
 const App = () => {
 
@@ -30,9 +33,11 @@ const App = () => {
             <Header />
             <SideBar />
             <div>
-
+                <PlayList />
+                {/* <Login /> */}
+                {/* <Contact /> */}
                 {/* <Teachers /> */}
-                <TeachProfile />
+                {/* <TeachProfile /> */}
                 {/* <About /> */}
                 {/* <QuickOptions /> */}
                 {/* <Courses /> */}
