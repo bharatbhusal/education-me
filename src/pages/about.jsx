@@ -1,71 +1,31 @@
 import React from 'react'
+import AboutImg from "../images/about-img.svg"
+import { FaGraduationCap } from "react-icons/fa";
+import { FaUserGraduate } from "react-icons/fa6";
+import { FaChalkboardTeacher } from "react-icons/fa";
+import { FaBriefcase } from "react-icons/fa";
+import { FaStar } from "react-icons/fa";
+import { FaStarHalfAlt } from "react-icons/fa";
 
-const about = () => {
+
+import Pic2 from '../images/pic-2.jpg'
+import Pic3 from '../images/pic-3.jpg'
+import Pic4 from '../images/pic-4.jpg'
+import Pic5 from '../images/pic-5.jpg'
+import Pic6 from '../images/pic-6.jpg'
+import Pic7 from '../images/pic-7.jpg'
+
+
+const About = () => {
     return (
         <div>
-
-            <header class="header">
-
-                <section class="flex">
-
-                    <a href="home.html" class="logo">Educa.</a>
-
-                    <form action="search.html" method="post" class="search-form">
-                        <input type="text" name="search_box" required placeholder="search courses..." maxlength="100" />
-                        <button type="submit" class="fas fa-search"></button>
-                    </form>
-
-                    <div class="icons">
-                        <div id="menu-btn" class="fas fa-bars"></div>
-                        <div id="search-btn" class="fas fa-search"></div>
-                        <div id="user-btn" class="fas fa-user"></div>
-                        <div id="toggle-btn" class="fas fa-sun"></div>
-                    </div>
-
-                    <div class="profile">
-                        <img src="images/pic-1.jpg" class="image" alt="" />
-                        <h3 class="name">shaikh anas</h3>
-                        <p class="role">studen</p>
-                        <a href="profile.html" class="btn">view profile</a>
-                        <div class="flex-btn">
-                            <a href="login.html" class="option-btn">login</a>
-                            <a href="register.html" class="option-btn">register</a>
-                        </div>
-                    </div>
-
-                </section>
-
-            </header>
-
-            <div class="side-bar">
-
-                <div id="close-btn">
-                    <i class="fas fa-times"></i>
-                </div>
-
-                <div class="profile">
-                    <img src="images/pic-1.jpg" class="image" alt="" />
-                    <h3 class="name">shaikh anas</h3>
-                    <p class="role">studen</p>
-                    <a href="profile.html" class="btn">view profile</a>
-                </div>
-
-                <nav class="navbar">
-                    <a href="home.html"><i class="fas fa-home"></i><span>home</span></a>
-                    <a href="about.html"><i class="fas fa-question"></i><span>about</span></a>
-                    <a href="courses.html"><i class="fas fa-graduation-cap"></i><span>courses</span></a>
-                    <a href="teachers.html"><i class="fas fa-chalkboard-user"></i><span>teachers</span></a>
-                    <a href="contact.html"><i class="fas fa-headset"></i><span>contact us</span></a>
-                </nav>
-
-            </div>
 
             <section class="about">
 
                 <div class="row">
 
                     <div class="image">
-                        <img src="images/about-img.svg" alt="" />
+                        <img src={AboutImg} alt="" />
                     </div>
 
                     <div class="content">
@@ -79,7 +39,7 @@ const about = () => {
                 <div class="box-container">
 
                     <div class="box">
-                        <i class="fas fa-graduation-cap"></i>
+                        <i class="fas fa-graduation-cap"><FaGraduationCap /></i>
                         <div>
                             <h3>+10k</h3>
                             <p>online courses</p>
@@ -87,7 +47,8 @@ const about = () => {
                     </div>
 
                     <div class="box">
-                        <i class="fas fa-user-graduate"></i>
+                        <i class="fas fa-user-graduate"><FaUserGraduate />
+                        </i>
                         <div>
                             <h3>+40k</h3>
                             <p>brilliant students</p>
@@ -95,7 +56,7 @@ const about = () => {
                     </div>
 
                     <div class="box">
-                        <i class="fas fa-chalkboard-user"></i>
+                        <i class="fas fa-chalkboard-user"><FaChalkboardTeacher /></i>
                         <div>
                             <h3>+2k</h3>
                             <p>expert tutors</p>
@@ -103,7 +64,7 @@ const about = () => {
                     </div>
 
                     <div class="box">
-                        <i class="fas fa-briefcase"></i>
+                        <i class="fas fa-briefcase"><FaBriefcase /></i>
                         <div>
                             <h3>100%</h3>
                             <p>job placement</p>
@@ -123,15 +84,20 @@ const about = () => {
                     <div class="box">
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus, suscipit a. Quibusdam, dignissimos consectetur. Sed ullam iusto eveniet qui aut quibusdam vero voluptate libero facilis fuga. Eligendi eaque molestiae modi?</p>
                         <div class="student">
-                            <img src="images/pic-2.jpg" alt="" />
+                            <img src={Pic2} alt="" />
                             <div>
                                 <h3>john deo</h3>
                                 <div class="stars">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star-half-alt"></i>
+                                    <i class="fas fa-star"><FaStar />
+                                    </i>
+                                    <i class="fas fa-star"><FaStar />
+                                    </i>
+                                    <i class="fas fa-star"><FaStar />
+                                    </i>
+                                    <i class="fas fa-star"><FaStar />
+                                    </i>
+                                    <i class="fas fa-star-half-alt"><FaStarHalfAlt />
+                                    </i>
                                 </div>
                             </div>
                         </div>
@@ -140,15 +106,20 @@ const about = () => {
                     <div class="box">
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus, suscipit a. Quibusdam, dignissimos consectetur. Sed ullam iusto eveniet qui aut quibusdam vero voluptate libero facilis fuga. Eligendi eaque molestiae modi?</p>
                         <div class="student">
-                            <img src="images/pic-3.jpg" alt="" />
+                            <img src={Pic3} alt="" />
                             <div>
                                 <h3>john deo</h3>
                                 <div class="stars">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star-half-alt"></i>
+                                    <i class="fas fa-star"><FaStar />
+                                    </i>
+                                    <i class="fas fa-star"><FaStar />
+                                    </i>
+                                    <i class="fas fa-star"><FaStar />
+                                    </i>
+                                    <i class="fas fa-star"><FaStar />
+                                    </i>
+                                    <i class="fas fa-star-half-alt"><FaStarHalfAlt />
+                                    </i>
                                 </div>
                             </div>
                         </div>
@@ -157,15 +128,20 @@ const about = () => {
                     <div class="box">
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus, suscipit a. Quibusdam, dignissimos consectetur. Sed ullam iusto eveniet qui aut quibusdam vero voluptate libero facilis fuga. Eligendi eaque molestiae modi?</p>
                         <div class="student">
-                            <img src="images/pic-4.jpg" alt="" />
+                            <img src={Pic4} alt="" />
                             <div>
                                 <h3>john deo</h3>
                                 <div class="stars">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star-half-alt"></i>
+                                    <i class="fas fa-star"><FaStar />
+                                    </i>
+                                    <i class="fas fa-star"><FaStar />
+                                    </i>
+                                    <i class="fas fa-star"><FaStar />
+                                    </i>
+                                    <i class="fas fa-star"><FaStar />
+                                    </i>
+                                    <i class="fas fa-star-half-alt"><FaStarHalfAlt />
+                                    </i>
                                 </div>
                             </div>
                         </div>
@@ -174,15 +150,20 @@ const about = () => {
                     <div class="box">
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus, suscipit a. Quibusdam, dignissimos consectetur. Sed ullam iusto eveniet qui aut quibusdam vero voluptate libero facilis fuga. Eligendi eaque molestiae modi?</p>
                         <div class="student">
-                            <img src="images/pic-5.jpg" alt="" />
+                            <img src={Pic5} alt="" />
                             <div>
                                 <h3>john deo</h3>
                                 <div class="stars">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star-half-alt"></i>
+                                    <i class="fas fa-star"><FaStar />
+                                    </i>
+                                    <i class="fas fa-star"><FaStar />
+                                    </i>
+                                    <i class="fas fa-star"><FaStar />
+                                    </i>
+                                    <i class="fas fa-star"><FaStar />
+                                    </i>
+                                    <i class="fas fa-star-half-alt"><FaStarHalfAlt />
+                                    </i>
                                 </div>
                             </div>
                         </div>
@@ -191,15 +172,20 @@ const about = () => {
                     <div class="box">
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus, suscipit a. Quibusdam, dignissimos consectetur. Sed ullam iusto eveniet qui aut quibusdam vero voluptate libero facilis fuga. Eligendi eaque molestiae modi?</p>
                         <div class="student">
-                            <img src="images/pic-6.jpg" alt="" />
+                            <img src={Pic6} alt="" />
                             <div>
                                 <h3>john deo</h3>
                                 <div class="stars">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star-half-alt"></i>
+                                    <i class="fas fa-star"><FaStar />
+                                    </i>
+                                    <i class="fas fa-star"><FaStar />
+                                    </i>
+                                    <i class="fas fa-star"><FaStar />
+                                    </i>
+                                    <i class="fas fa-star"><FaStar />
+                                    </i>
+                                    <i class="fas fa-star-half-alt"><FaStarHalfAlt />
+                                    </i>
                                 </div>
                             </div>
                         </div>
@@ -208,34 +194,28 @@ const about = () => {
                     <div class="box">
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus, suscipit a. Quibusdam, dignissimos consectetur. Sed ullam iusto eveniet qui aut quibusdam vero voluptate libero facilis fuga. Eligendi eaque molestiae modi?</p>
                         <div class="student">
-                            <img src="images/pic-7.jpg" alt="" />
+                            <img src={Pic7} alt="" />
                             <div>
                                 <h3>john deo</h3>
                                 <div class="stars">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star-half-alt"></i>
+                                    <i class="fas fa-star"><FaStar />
+                                    </i>
+                                    <i class="fas fa-star"><FaStar />
+                                    </i>
+                                    <i class="fas fa-star"><FaStar />
+                                    </i>
+                                    <i class="fas fa-star"><FaStar />
+                                    </i>
+                                    <i class="fas fa-star-half-alt"><FaStarHalfAlt />
+                                    </i>
                                 </div>
                             </div>
                         </div>
                     </div>
-
                 </div>
-
             </section>
-
-
-
-
-            <footer class="footer">
-
-                &copy; copyright @ 2022 by <span>mr. web designer</span> | all rights reserved!
-
-            </footer>
         </div>
     )
 }
 
-export default about
+export default About
