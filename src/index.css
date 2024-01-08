@@ -334,6 +334,12 @@ section {
 .side-bar .navbar a:hover i {
   margin-right: 2.5rem;
 }
+.side-bar .navbar a.active {
+  background-color: var(--main-color);
+}
+.side-bar .navbar a.pending {
+  background-color: var(--light-color);
+}
 
 .side-bar.active {
   left: -30rem;
