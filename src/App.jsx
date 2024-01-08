@@ -13,6 +13,7 @@ import PlayList from './pages/Playlist'
 import Profile from './pages/Profile'
 import Register from './pages/Register'
 import Update from './pages/Update'
+import WatchVideo from './pages/WatchVideo'
 
 const App = () => {
 
@@ -46,7 +47,8 @@ const App = () => {
                 {/* <Courses /> */}
                 {/* <Profile /> */}
                 {/* <Register /> */}
-                <Update />
+                {/* <Update /> */}
+                <WatchVideo />
             </div>
 
             <Footer />

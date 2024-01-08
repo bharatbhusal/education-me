@@ -1,70 +1,20 @@
 import React from 'react'
+import Vid1 from '../videos/vid-1.mp4'
+import Post11 from '../images/post-1-1.png'
+import Pic1 from '../images/pic-1.jpg'
+import Pic2 from '../images/pic-2.jpg'
+import Pic3 from '../images/pic-3.jpg'
+import Pic4 from '../images/pic-4.jpg'
+import Pic5 from '../images/pic-5.jpg'
 
 const WatchVideo = () => {
    return (
       <div>
-
-         <header class="header">
-
-            <section class="flex">
-
-               <a href="home.html" class="logo">Educa.</a>
-
-               <form action="search.html" method="post" class="search-form">
-                  <input type="text" name="search_box" required placeholder="search courses..." maxlength="100" />
-                  <button type="submit" class="fas fa-search"></button>
-               </form>
-
-               <div class="icons">
-                  <div id="menu-btn" class="fas fa-bars"></div>
-                  <div id="search-btn" class="fas fa-search"></div>
-                  <div id="user-btn" class="fas fa-user"></div>
-                  <div id="toggle-btn" class="fas fa-sun"></div>
-               </div>
-
-               <div class="profile">
-                  <img src="images/pic-1.jpg" class="image" alt="" />
-                  <h3 class="name">shaikh anas</h3>
-                  <p class="role">studen</p>
-                  <a href="profile.html" class="btn">view profile</a>
-                  <div class="flex-btn">
-                     <a href="login.html" class="option-btn">login</a>
-                     <a href="register.html" class="option-btn">register</a>
-                  </div>
-               </div>
-
-            </section>
-
-         </header>
-
-         <div class="side-bar">
-
-            <div id="close-btn">
-               <i class="fas fa-times"></i>
-            </div>
-
-            <div class="profile">
-               <img src="images/pic-1.jpg" class="image" alt="" />
-               <h3 class="name">shaikh anas</h3>
-               <p class="role">studen</p>
-               <a href="profile.html" class="btn">view profile</a>
-            </div>
-
-            <nav class="navbar">
-               <a href="home.html"><i class="fas fa-home"></i><span>home</span></a>
-               <a href="about.html"><i class="fas fa-question"></i><span>about</span></a>
-               <a href="courses.html"><i class="fas fa-graduation-cap"></i><span>courses</span></a>
-               <a href="teachers.html"><i class="fas fa-chalkboard-user"></i><span>teachers</span></a>
-               <a href="contact.html"><i class="fas fa-headset"></i><span>contact us</span></a>
-            </nav>
-
-         </div>
-
          <section class="watch-video">
 
             <div class="video-container">
                <div class="video">
-                  <video src="images/vid-1.mp4" controls poster="images/post-1-1.png" id="video"></video>
+                  <video src={Vid1} controls poster={Post11} id="video"></video>
                </div>
                <h3 class="title">complete HTML tutorial (part 01)</h3>
                <div class="info">
@@ -72,7 +22,7 @@ const WatchVideo = () => {
                   <p class="date"><i class="fas fa-heart"></i><span>44 likes</span></p>
                </div>
                <div class="tutor">
-                  <img src="images/pic-2.jpg" alt="" />
+                  <img src={Pic2} alt="" />
                   <div>
                      <h3>john deo</h3>
                      <span>developer</span>
@@ -106,7 +56,7 @@ const WatchVideo = () => {
 
                <div class="box">
                   <div class="user">
-                     <img src="images/pic-1.jpg" alt="" />
+                     <img src={Pic1} alt="" />
                      <div>
                         <h3>shaikh anas</h3>
                         <span>22-10-2022</span>
@@ -121,7 +71,7 @@ const WatchVideo = () => {
 
                <div class="box">
                   <div class="user">
-                     <img src="images/pic-2.jpg" alt="" />
+                     <img src={Pic2} alt="" />
                      <div>
                         <h3>john deo</h3>
                         <span>22-10-2022</span>
@@ -133,7 +83,7 @@ const WatchVideo = () => {
 
                <div class="box">
                   <div class="user">
-                     <img src="images/pic-3.jpg" alt="" />
+                     <img src={Pic3} alt="" />
                      <div>
                         <h3>john deo</h3>
                         <span>22-10-2022</span>
@@ -146,7 +96,7 @@ const WatchVideo = () => {
 
                <div class="box">
                   <div class="user">
-                     <img src="images/pic-4.jpg" alt="" />
+                     <img src={Pic4} alt="" />
                      <div>
                         <h3>john deo</h3>
                         <span>22-10-2022</span>
@@ -157,7 +107,7 @@ const WatchVideo = () => {
 
                <div class="box">
                   <div class="user">
-                     <img src="images/pic-5.jpg" alt="" />
+                     <img src={Pic5} alt="" />
                      <div>
                         <h3>john deo</h3>
                         <span>22-10-2022</span>
@@ -168,7 +118,7 @@ const WatchVideo = () => {
 
                <div class="box">
                   <div class="user">
-                     <img src="images/pic-2.jpg" alt="" />
+                     <img src={Pic2} alt="" />
                      <div>
                         <h3>john deo</h3>
                         <span>22-10-2022</span>
@@ -183,27 +133,6 @@ const WatchVideo = () => {
             </div>
 
          </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-         <footer class="footer">
-
-            &copy; copyright @ 2022 by <span>mr. web designer</span> | all rights reserved!
-
-         </footer>
-
 
       </div>
    )
