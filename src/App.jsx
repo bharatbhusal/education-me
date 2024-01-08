@@ -15,6 +15,7 @@ import Register from './pages/Register'
 import Update from './pages/Update'
 import WatchVideo from './pages/WatchVideo'
 import Home from './pages/Home'
+import { Outlet } from 'react-router-dom'
 
 const App = () => {
 
@@ -44,15 +45,15 @@ const App = () => {
                 {/* <Teachers /> */}
                 {/* <TeachProfile /> */}
                 {/* <About /> */}
-                <Home />
+                {/* <Home /> */}
                 {/* <QuickOptions /> */}
                 {/* <Courses /> */}
                 {/* <Profile /> */}
                 {/* <Register /> */}
                 {/* <Update /> */}
                 {/* <WatchVideo /> */}
+                <Outlet />
             </div>
-
             <Footer />
         </div>
     )

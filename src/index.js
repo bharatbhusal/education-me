@@ -2,10 +2,25 @@
 import {
     createRoot
 } from "react-dom/client"
+import { createBrowserRouter, RouterProvider } from "react-router-dom"
 
 // Importing the main App component from the "./App" file
 import App from "./App"
 import "./index.css"
+import Home from "./pages/Home"
+import About from "./pages/About"
+
+import QuickOptions from './pages/home/QuickOptions'
+import Courses from './pages/Courses'
+import Teachers from './pages/Teachers'
+import TeachProfile from './pages/TeacherProfile'
+import Contact from './pages/Contact'
+import Login from './pages/Login'
+import PlayList from './pages/Playlist'
+import Profile from './pages/Profile'
+import Register from './pages/Register'
+import Update from './pages/Update'
+import WatchVideo from './pages/WatchVideo'
 
 // Getting the DOM element with the id "root"
 const divContainer = document.getElementById("root")
@@ -13,5 +28,51 @@ const divContainer = document.getElementById("root")
 // Creating a root for the React application using createRoot and associating it with the divContainer
 const root = createRoot(divContainer)
 
+const router = createBrowserRouter([
+    {
+        path: "/",
+        element: <App />,
+        errorElement: <>Error Page</>,
+        // errorElement: <ErrorPage />,
+        // loader: appLoader,
+        // action: appAction,
+        children: [
+            {
+                errorElement: <>Error Page</>,
+                // errorElement: <ErrorPage />,
+                children: [
+                    // { index: true, element: <Index /> },
+                    {
+                        path: "home",
+                        element: <Home />,
+                        // loader: contactLoader,
+                        // action: contactAction,
+                    },
+                    {
+                        path: "about",
+                        element: <About />,
+                    },
+
+                    {
+                        path: "courses",
+                        element: <Courses />,
+                    },
+
+                    {
+                        path: "teachers",
+                        element: <Teachers />,
+                    },
+
+                    {
+                        path: "contact",
+                        element: <Contact />,
+                    },
+                ]
+            }
+
+        ]
+    },
+])
+
 // Rendering the main App component within the root
-root.render(<App />)
+root.render(<RouterProvider router={router} />)
