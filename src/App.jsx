@@ -39,19 +39,7 @@ const App = () => {
             <Header />
             <SideBar />
             <div>
-                {/* <PlayList /> */}
-                {/* <Login /> */}
-                {/* <Contact /> */}
-                {/* <Teachers /> */}
-                {/* <TeachProfile /> */}
-                {/* <About /> */}
-                {/* <Home /> */}
-                {/* <QuickOptions /> */}
-                {/* <Courses /> */}
-                {/* <Profile /> */}
-                {/* <Register /> */}
-                {/* <Update /> */}
-                {/* <WatchVideo /> */}
+
                 <Outlet />
             </div>
             <Footer />
