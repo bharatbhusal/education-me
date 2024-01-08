@@ -1,66 +1,29 @@
 import React from 'react'
 
-const courses = () => {
+import Pic1 from '../images/pic-1.jpg'
+import Pic2 from '../images/pic-2.jpg'
+import Pic3 from '../images/pic-3.jpg'
+import Pic4 from '../images/pic-4.jpg'
+import Pic5 from '../images/pic-5.jpg'
+import Pic6 from '../images/pic-6.jpg'
+import Pic7 from '../images/pic-7.jpg'
+import Pic8 from '../images/pic-8.jpg'
+import Pic9 from '../images/pic-9.jpg'
+
+
+import Thumb1 from '../images/thumb-1.png'
+import Thumb2 from '../images/thumb-2.png'
+import Thumb3 from '../images/thumb-3.png'
+import Thumb4 from '../images/thumb-4.png'
+import Thumb5 from '../images/thumb-5.png'
+import Thumb6 from '../images/thumb-6.png'
+import Thumb7 from '../images/thumb-7.png'
+import Thumb8 from '../images/thumb-8.png'
+import Thumb9 from '../images/thumb-9.png'
+
+const Courses = () => {
    return (
       <div>
-
-
-         <header class="header">
-
-            <section class="flex">
-
-               <a href="home.html" class="logo">Educa.</a>
-
-               <form action="search.html" method="post" class="search-form">
-                  <input type="text" name="search_box" required placeholder="search courses..." maxlength="100" />
-                  <button type="submit" class="fas fa-search"></button>
-               </form>
-
-               <div class="icons">
-                  <div id="menu-btn" class="fas fa-bars"></div>
-                  <div id="search-btn" class="fas fa-search"></div>
-                  <div id="user-btn" class="fas fa-user"></div>
-                  <div id="toggle-btn" class="fas fa-sun"></div>
-               </div>
-
-               <div class="profile">
-                  <img src="images/pic-1.jpg" class="image" alt="" />
-                  <h3 class="name">shaikh anas</h3>
-                  <p class="role">studen</p>
-                  <a href="profile.html" class="btn">view profile</a>
-                  <div class="flex-btn">
-                     <a href="login.html" class="option-btn">login</a>
-                     <a href="register.html" class="option-btn">register</a>
-                  </div>
-               </div>
-
-            </section>
-
-         </header>
-
-         <div class="side-bar">
-
-            <div id="close-btn">
-               <i class="fas fa-times"></i>
-            </div>
-
-            <div class="profile">
-               <img src="images/pic-1.jpg" class="image" alt="" />
-               <h3 class="name">shaikh anas</h3>
-               <p class="role">studen</p>
-               <a href="profile.html" class="btn">view profile</a>
-            </div>
-
-            <nav class="navbar">
-               <a href="home.html"><i class="fas fa-home"></i><span>home</span></a>
-               <a href="about.html"><i class="fas fa-question"></i><span>about</span></a>
-               <a href="courses.html"><i class="fas fa-graduation-cap"></i><span>courses</span></a>
-               <a href="teachers.html"><i class="fas fa-chalkboard-user"></i><span>teachers</span></a>
-               <a href="contact.html"><i class="fas fa-headset"></i><span>contact us</span></a>
-            </nav>
-
-         </div>
-
          <section class="courses">
 
             <h1 class="heading">our courses</h1>
@@ -69,14 +32,14 @@ const courses = () => {
 
                <div class="box">
                   <div class="tutor">
-                     <img src="images/pic-2.jpg" alt="" />
+                     <img src={Pic2} alt="" />
                      <div class="info">
                         <h3>john deo</h3>
                         <span>21-10-2022</span>
                      </div>
                   </div>
                   <div class="thumb">
-                     <img src="images/thumb-1.png" alt="" />
+                     <img src={Thumb1} alt="" />
                      <span>10 videos</span>
                   </div>
                   <h3 class="title">complete HTML tutorial</h3>
@@ -85,14 +48,14 @@ const courses = () => {
 
                <div class="box">
                   <div class="tutor">
-                     <img src="images/pic-3.jpg" alt="" />
+                     <img src={Pic3} alt="" />
                      <div class="info">
                         <h3>john deo</h3>
                         <span>21-10-2022</span>
                      </div>
                   </div>
                   <div class="thumb">
-                     <img src="images/thumb-2.png" alt="" />
+                     <img src={Thumb2} alt="" />
                      <span>10 videos</span>
                   </div>
                   <h3 class="title">complete CSS tutorial</h3>
@@ -101,14 +64,14 @@ const courses = () => {
 
                <div class="box">
                   <div class="tutor">
-                     <img src="images/pic-4.jpg" alt="" />
+                     <img src={Pic4} alt="" />
                      <div class="info">
                         <h3>john deo</h3>
                         <span>21-10-2022</span>
                      </div>
                   </div>
                   <div class="thumb">
-                     <img src="images/thumb-3.png" alt="" />
+                     <img src={Thumb3} alt="" />
                      <span>10 videos</span>
                   </div>
                   <h3 class="title">complete JS tutorial</h3>
@@ -117,14 +80,14 @@ const courses = () => {
 
                <div class="box">
                   <div class="tutor">
-                     <img src="images/pic-5.jpg" alt="" />
+                     <img src={Pic5} alt="" />
                      <div class="info">
                         <h3>john deo</h3>
                         <span>21-10-2022</span>
                      </div>
                   </div>
                   <div class="thumb">
-                     <img src="images/thumb-4.png" alt="" />
+                     <img src={Thumb4} alt="" />
                      <span>10 videos</span>
                   </div>
                   <h3 class="title">complete Boostrap tutorial</h3>
@@ -133,14 +96,14 @@ const courses = () => {
 
                <div class="box">
                   <div class="tutor">
-                     <img src="images/pic-6.jpg" alt="" />
+                     <img src={Pic6} alt="" />
                      <div class="info">
                         <h3>john deo</h3>
                         <span>21-10-2022</span>
                      </div>
                   </div>
                   <div class="thumb">
-                     <img src="images/thumb-5.png" alt="" />
+                     <img src={Thumb5} alt="" />
                      <span>10 videos</span>
                   </div>
                   <h3 class="title">complete JQuery tutorial</h3>
@@ -149,14 +112,14 @@ const courses = () => {
 
                <div class="box">
                   <div class="tutor">
-                     <img src="images/pic-7.jpg" alt="" />
+                     <img src={Pic7} alt="" />
                      <div class="info">
                         <h3>john deo</h3>
                         <span>21-10-2022</span>
                      </div>
                   </div>
                   <div class="thumb">
-                     <img src="images/thumb-6.png" alt="" />
+                     <img src={Thumb6} alt="" />
                      <span>10 videos</span>
                   </div>
                   <h3 class="title">complete SASS tutorial</h3>
@@ -165,14 +128,14 @@ const courses = () => {
 
                <div class="box">
                   <div class="tutor">
-                     <img src="images/pic-8.jpg" alt="" />
+                     <img src={Pic8} alt="" />
                      <div class="info">
                         <h3>john deo</h3>
                         <span>21-10-2022</span>
                      </div>
                   </div>
                   <div class="thumb">
-                     <img src="images/thumb-7.png" alt="" />
+                     <img src={Thumb7} alt="" />
                      <span>10 videos</span>
                   </div>
                   <h3 class="title">complete PHP tutorial</h3>
@@ -181,14 +144,14 @@ const courses = () => {
 
                <div class="box">
                   <div class="tutor">
-                     <img src="images/pic-9.jpg" alt="" />
+                     <img src={Pic9} alt="" />
                      <div class="info">
                         <h3>john deo</h3>
                         <span>21-10-2022</span>
                      </div>
                   </div>
                   <div class="thumb">
-                     <img src="images/thumb-8.png" alt="" />
+                     <img src={Thumb8} alt="" />
                      <span>10 videos</span>
                   </div>
                   <h3 class="title">complete MySQL tutorial</h3>
@@ -197,14 +160,14 @@ const courses = () => {
 
                <div class="box">
                   <div class="tutor">
-                     <img src="images/pic-1.jpg" alt="" />
+                     <img src={Pic1} alt="" />
                      <div class="info">
                         <h3>john deo</h3>
                         <span>21-10-2022</span>
                      </div>
                   </div>
                   <div class="thumb">
-                     <img src="images/thumb-9.png" alt="" />
+                     <img src={Thumb9} alt="" />
                      <span>10 videos</span>
                   </div>
                   <h3 class="title">complete react tutorial</h3>
@@ -214,28 +177,8 @@ const courses = () => {
             </div>
 
          </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-         <footer class="footer">
-
-            &copy; copyright @ 2022 by <span>mr. web designer</span> | all rights reserved!
-
-         </footer>
-
       </div>
    )
 }
 
-export default courses
+export default Courses

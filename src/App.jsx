@@ -3,7 +3,7 @@ import Header from './components/Header'
 import SideBar from './components/SideBar'
 import Footer from './components/Footer'
 import QuickOptions from './components/home/QuickOptions'
-import Courses from './components/home/Courses'
+import Courses from './pages/Courses'
 import About from './pages/About'
 
 const App = () => {
@@ -28,9 +28,9 @@ const App = () => {
             <Header />
             <SideBar />
             <div>
-                <About />
+                {/* <About /> */}
                 {/* <QuickOptions /> */}
-                {/* <Courses /> */}
+                <Courses />
             </div>
 
             <Footer />
