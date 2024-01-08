@@ -5,6 +5,7 @@ import Footer from './components/Footer'
 import QuickOptions from './components/home/QuickOptions'
 import Courses from './pages/Courses'
 import About from './pages/About'
+import Teachers from './pages/Teachers'
 
 const App = () => {
 
@@ -28,9 +29,11 @@ const App = () => {
             <Header />
             <SideBar />
             <div>
+
+                <Teachers />
                 {/* <About /> */}
                 {/* <QuickOptions /> */}
-                <Courses />
+                {/* <Courses /> */}
             </div>
 
             <Footer />
