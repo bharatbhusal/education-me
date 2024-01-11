@@ -1,22 +1,26 @@
-import React from 'react'
+import React from 'react';
+import { Form, useNavigate } from 'react-router-dom';
 
 const Login = () => {
+  const navigate = useNavigate()
+  const validateForm = (e) => {
+    e.preventDefault(); // Prevents the default form submission behavior
+    console.log("validated");
+    console.log("Email:", e.target.email.value);
+    console.log("Password:", e.target.pass.value);
+    navigate('/')
+  };
 
-  const validateForm = () => {
-    console.log("validated")
-  }
   return (
     <div>
-
       <section className="form-container">
-        <form
-          action=""
+        <Form
           method="post"
           encType="multipart/form-data"
           onSubmit={validateForm}
         >
           <h3>login now</h3>
-          <p>your email <span>*</span></p>
+          <p>Your Email <span>*</span></p>
           <input
             type="email"
             name="email"
@@ -25,7 +29,7 @@ const Login = () => {
             maxLength="50"
             className="box"
           />
-          <p>your password <span>*</span></p>
+          <p>Your Password <span>*</span></p>
           <input
             type="password"
             name="pass"
@@ -36,11 +40,10 @@ const Login = () => {
           />
 
           <input type="submit" value="login new" name="submit" className="btn" />
-        </form>
+        </Form>
       </section>
-
     </div>
-  )
-}
+  );
+};
 
-export default Login
+export default Login;
