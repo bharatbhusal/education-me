@@ -6,6 +6,7 @@ import Pic2 from '../images/pic-2.jpg'
 import Pic3 from '../images/pic-3.jpg'
 import Pic4 from '../images/pic-4.jpg'
 import Pic5 from '../images/pic-5.jpg'
+import { NavLink } from 'react-router-dom'
 
 const WatchVideo = () => {
    return (
@@ -29,7 +30,8 @@ const WatchVideo = () => {
                   </div>
                </div>
                <form action="" method="post" class="flex">
-                  <a href="playlist.html" class="inline-btn">view playlist</a>
+                  <NavLink to={'/playlist'} className="inline-btn">View Playlist
+                  </NavLink>
                   <button><i class="far fa-heart"></i><span>like</span></button>
                </form>
                <p class="description">

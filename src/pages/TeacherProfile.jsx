@@ -1,6 +1,6 @@
 import React from 'react'
 import Pic2 from '../images/pic-2.jpg'
-
+import { NavLink } from 'react-router-dom'
 import Thumb1 from '../images/thumb-1.png'
 import Thumb2 from '../images/thumb-2.png'
 import Thumb3 from '../images/thumb-3.png'
@@ -41,7 +41,8 @@ const TeachProfile = () => {
                      <span>10 videos</span>
                   </div>
                   <h3 class="title">complete HTML tutorial</h3>
-                  <a href="playlist.html" class="inline-btn">view playlist</a>
+                  <NavLink to={'/playlist'} className="inline-btn">View Playlist
+                  </NavLink>
                </div>
 
                <div class="box">
@@ -50,7 +51,8 @@ const TeachProfile = () => {
                      <span>10 videos</span>
                   </div>
                   <h3 class="title">complete CSS tutorial</h3>
-                  <a href="playlist.html" class="inline-btn">view playlist</a>
+                  <NavLink to={'/playlist'} className="inline-btn">View Playlist
+                  </NavLink>
                </div>
 
                <div class="box">
@@ -59,7 +61,8 @@ const TeachProfile = () => {
                      <span>10 videos</span>
                   </div>
                   <h3 class="title">complete javascript tutorial</h3>
-                  <a href="playlist.html" class="inline-btn">view playlist</a>
+                  <NavLink to={'/playlist'} className="inline-btn">View Playlist
+                  </NavLink>
                </div>
 
                <div class="box">
@@ -68,7 +71,8 @@ const TeachProfile = () => {
                      <span>10 videos</span>
                   </div>
                   <h3 class="title">complete Boostrap tutorial</h3>
-                  <a href="playlist.html" class="inline-btn">view playlist</a>
+                  <NavLink to={'/playlist'} className="inline-btn">View Playlist
+                  </NavLink>
                </div>
 
             </div>

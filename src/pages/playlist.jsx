@@ -74,43 +74,38 @@ const Playlist = () => {
             <h1 class="heading">playlist videos</h1>
 
             <div class="box-container">
-
-               <a class="box" href="watch-video.html">
-                  <i class="fas fa-play"></i>
+               <NavLink to={'/watch-video'} className="box"><i class="fas fa-play"></i>
                   <img src={Post11} alt="" />
                   <h3>complete HTML tutorial (part 01)</h3>
-               </a>
+               </NavLink>
 
-               <a class="box" href="watch-video.html">
-                  <i class="fas fa-play"></i>
+
+               <NavLink to={'/watch-video'} className="box"><i class="fas fa-play"></i>
                   <img src={Post12} alt="" />
                   <h3>complete HTML tutorial (part 02)</h3>
-               </a>
+               </NavLink>
 
-               <a class="box" href="watch-video.html">
-                  <i class="fas fa-play"></i>
+
+
+               <NavLink to={'/watch-video'} className="box"><i class="fas fa-play"></i>
                   <img src={Post13} alt="" />
                   <h3>complete HTML tutorial (part 03)</h3>
-               </a>
+               </NavLink>
 
-               <a class="box" href="watch-video.html">
-                  <i class="fas fa-play"></i>
+               <NavLink to={'/watch-video'} className="box"><i class="fas fa-play"></i>
                   <img src={Post14} alt="" />
                   <h3>complete HTML tutorial (part 04)</h3>
-               </a>
+               </NavLink>
 
-               <a class="box" href="watch-video.html">
-                  <i class="fas fa-play"></i>
+               <NavLink to={'/watch-video'} className="box"><i class="fas fa-play"></i>
                   <img src={Post15} alt="" />
                   <h3>complete HTML tutorial (part 05)</h3>
-               </a>
+               </NavLink>
 
-               <a class="box" href="watch-video.html">
-                  <i class="fas fa-play"></i>
+               <NavLink to={'/watch-video'} className="box"><i class="fas fa-play"></i>
                   <img src={Post16} alt="" />
                   <h3>complete HTML tutorial (part 06)</h3>
-               </a>
-
+               </NavLink>
             </div>
 
          </section>
