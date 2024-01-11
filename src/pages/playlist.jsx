@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { NavLink } from 'react-router-dom'
 import Pic1 from '../images/pic-1.jpg'
 import Pic2 from '../images/pic-2.jpg'
 import Pic3 from '../images/pic-3.jpg'
@@ -60,7 +60,9 @@ const Playlist = () => {
                   <div class="details">
                      <h3>complete HTML tutorial</h3>
                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum minus reiciendis, error sunt veritatis exercitationem deserunt velit doloribus itaque voluptate.</p>
-                     <a href="teacher_profile.html" class="inline-btn">view profile</a>
+
+                     <NavLink to={'/teacher-profile'} className="inline-btn">View Profile
+                     </NavLink>
                   </div>
                </div>
             </div>

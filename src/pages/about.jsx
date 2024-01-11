@@ -14,7 +14,7 @@ import Pic4 from '../images/pic-4.jpg'
 import Pic5 from '../images/pic-5.jpg'
 import Pic6 from '../images/pic-6.jpg'
 import Pic7 from '../images/pic-7.jpg'
-
+import { NavLink } from 'react-router-dom';
 
 const About = () => {
     return (
@@ -31,7 +31,9 @@ const About = () => {
                     <div class="content">
                         <h3>why choose us?</h3>
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut dolorum quasi illo? Distinctio expedita commodi, nemo a quam error repellendus sint, fugiat quis numquam eum eveniet sequi aspernatur quaerat tenetur.</p>
-                        <a href="courses.html" class="inline-btn">our courses</a>
+                        <NavLink className="inline-btn" to={"/register"}>
+                            get started
+                        </NavLink>
                     </div>
 
                 </div>

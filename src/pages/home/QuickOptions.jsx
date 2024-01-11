@@ -16,7 +16,9 @@ const QuickOptions = () => {
                     <p className="likes">total comments : <span>12</span></p>
                     <a href="#" className="inline-btn">view comments</a>
                     <p className="likes">saved playlists : <span>4</span></p>
-                    <a href="#" className="inline-btn">view playlists</a>
+                    <NavLink className="inline-btn" to={"/playlist"}>
+                        view playlist
+                    </NavLink>
                 </div>
 
                 <div className="box">

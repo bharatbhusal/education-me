@@ -6,7 +6,7 @@ import Pic5 from '../images/pic-5.jpg'
 import Pic6 from '../images/pic-6.jpg'
 import Pic7 from '../images/pic-7.jpg'
 import Pic8 from '../images/pic-8.jpg'
-
+import { NavLink } from 'react-router-dom'
 
 
 const Teachers = () => {
@@ -27,7 +27,8 @@ const Teachers = () => {
                <div class="box offer">
                   <h3>become a tutor</h3>
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, itaque ipsam fuga ex et aliquam.</p>
-                  <a href="register.html" class="inline-btn">get started</a>
+                  <NavLink to={'/register'} className="inline-btn">get started
+                  </NavLink>
                </div>
 
                <div class="box">
@@ -41,7 +42,9 @@ const Teachers = () => {
                   <p>total playlists : <span>4</span></p>
                   <p>total videos : <span>18</span></p>
                   <p>total likes : <span>1208</span></p>
-                  <a href="teacher_profile.html" class="inline-btn">view profile</a>
+
+                  <NavLink to={'/teacher-profile'} className="inline-btn">View Profile
+                  </NavLink>
                </div>
 
                <div class="box">
@@ -55,7 +58,8 @@ const Teachers = () => {
                   <p>total playlists : <span>4</span></p>
                   <p>total videos : <span>18</span></p>
                   <p>total likes : <span>1208</span></p>
-                  <a href="teacher_profile.html" class="inline-btn">view profile</a>
+                  <NavLink to={'/teacher-profile'} className="inline-btn">View Profile
+                  </NavLink>
                </div>
 
                <div class="box">
@@ -69,7 +73,8 @@ const Teachers = () => {
                   <p>total playlists : <span>4</span></p>
                   <p>total videos : <span>18</span></p>
                   <p>total likes : <span>1208</span></p>
-                  <a href="teacher_profile.html" class="inline-btn">view profile</a>
+                  <NavLink to={'/teacher-profile'} className="inline-btn">View Profile
+                  </NavLink>
                </div>
 
                <div class="box">
@@ -83,7 +88,8 @@ const Teachers = () => {
                   <p>total playlists : <span>4</span></p>
                   <p>total videos : <span>18</span></p>
                   <p>total likes : <span>1208</span></p>
-                  <a href="teacher_profile.html" class="inline-btn">view profile</a>
+                  <NavLink to={'/teacher-profile'} className="inline-btn">View Profile
+                  </NavLink>
                </div>
 
                <div class="box">
@@ -97,7 +103,8 @@ const Teachers = () => {
                   <p>total playlists : <span>4</span></p>
                   <p>total videos : <span>18</span></p>
                   <p>total likes : <span>1208</span></p>
-                  <a href="teacher_profile.html" class="inline-btn">view profile</a>
+                  <NavLink to={'/teacher-profile'} className="inline-btn">View Profile
+                  </NavLink>
                </div>
 
                <div class="box">
@@ -111,7 +118,8 @@ const Teachers = () => {
                   <p>total playlists : <span>4</span></p>
                   <p>total videos : <span>18</span></p>
                   <p>total likes : <span>1208</span></p>
-                  <a href="teacher_profile.html" class="inline-btn">view profile</a>
+                  <NavLink to={'/teacher-profile'} className="inline-btn">View Profile
+                  </NavLink>
                </div>
 
                <div class="box">
@@ -125,7 +133,8 @@ const Teachers = () => {
                   <p>total playlists : <span>4</span></p>
                   <p>total videos : <span>18</span></p>
                   <p>total likes : <span>1208</span></p>
-                  <a href="teacher_profile.html" class="inline-btn">view profile</a>
+                  <NavLink to={'/teacher-profile'} className="inline-btn">View Profile
+                  </NavLink>
                </div>
 
             </div>

@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { NavLink } from 'react-router-dom'
 import Pic1 from '../images/pic-1.jpg'
 import Pic2 from '../images/pic-2.jpg'
 import Pic3 from '../images/pic-3.jpg'
@@ -43,7 +43,8 @@ const Courses = () => {
                      <span>10 videos</span>
                   </div>
                   <h3 class="title">complete HTML tutorial</h3>
-                  <a href="playlist.html" class="inline-btn">view playlist</a>
+                  <NavLink to={'/playlist'} className="inline-btn">View Playlist
+                  </NavLink>
                </div>
 
                <div class="box">
@@ -59,7 +60,8 @@ const Courses = () => {
                      <span>10 videos</span>
                   </div>
                   <h3 class="title">complete CSS tutorial</h3>
-                  <a href="playlist.html" class="inline-btn">view playlist</a>
+                  <NavLink to={'/playlist'} className="inline-btn">View Playlist
+                  </NavLink>
                </div>
 
                <div class="box">
@@ -75,7 +77,8 @@ const Courses = () => {
                      <span>10 videos</span>
                   </div>
                   <h3 class="title">complete JS tutorial</h3>
-                  <a href="playlist.html" class="inline-btn">view playlist</a>
+                  <NavLink to={'/playlist'} className="inline-btn">View Playlist
+                  </NavLink>
                </div>
 
                <div class="box">
@@ -91,7 +94,8 @@ const Courses = () => {
                      <span>10 videos</span>
                   </div>
                   <h3 class="title">complete Boostrap tutorial</h3>
-                  <a href="playlist.html" class="inline-btn">view playlist</a>
+                  <NavLink to={'/playlist'} className="inline-btn">View Playlist
+                  </NavLink>
                </div>
 
                <div class="box">
@@ -107,7 +111,8 @@ const Courses = () => {
                      <span>10 videos</span>
                   </div>
                   <h3 class="title">complete JQuery tutorial</h3>
-                  <a href="playlist.html" class="inline-btn">view playlist</a>
+                  <NavLink to={'/playlist'} className="inline-btn">View Playlist
+                  </NavLink>
                </div>
 
                <div class="box">
@@ -123,7 +128,8 @@ const Courses = () => {
                      <span>10 videos</span>
                   </div>
                   <h3 class="title">complete SASS tutorial</h3>
-                  <a href="playlist.html" class="inline-btn">view playlist</a>
+                  <NavLink to={'/playlist'} className="inline-btn">View Playlist
+                  </NavLink>
                </div>
 
                <div class="box">
@@ -139,7 +145,8 @@ const Courses = () => {
                      <span>10 videos</span>
                   </div>
                   <h3 class="title">complete PHP tutorial</h3>
-                  <a href="playlist.html" class="inline-btn">view playlist</a>
+                  <NavLink to={'/playlist'} className="inline-btn">View Playlist
+                  </NavLink>
                </div>
 
                <div class="box">
@@ -155,7 +162,8 @@ const Courses = () => {
                      <span>10 videos</span>
                   </div>
                   <h3 class="title">complete MySQL tutorial</h3>
-                  <a href="playlist.html" class="inline-btn">view playlist</a>
+                  <NavLink to={'/playlist'} className="inline-btn">View Playlist
+                  </NavLink>
                </div>
 
                <div class="box">
@@ -171,7 +179,8 @@ const Courses = () => {
                      <span>10 videos</span>
                   </div>
                   <h3 class="title">complete react tutorial</h3>
-                  <a href="playlist.html" class="inline-btn">view playlist</a>
+                  <NavLink to={'/playlist'} className="inline-btn">View Playlist
+                  </NavLink>
                </div>
 
             </div>

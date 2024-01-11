@@ -34,7 +34,8 @@ export const Courses = () => {
                         <span>10 videos</span>
                     </div>
                     <h3 className="title">complete HTML tutorial</h3>
-                    <a href="playlist.html" className="inline-btn">view playlist</a>
+                    <NavLink to={'/playlist'} className="inline-btn">View Playlist
+                    </NavLink>
                 </div>
 
                 <div className="box">
@@ -50,7 +51,8 @@ export const Courses = () => {
                         <span>10 videos</span>
                     </div>
                     <h3 className="title">complete CSS tutorial</h3>
-                    <a href="playlist.html" className="inline-btn">view playlist</a>
+                    <NavLink to={'/playlist'} className="inline-btn">View Playlist
+                    </NavLink>
                 </div>
 
                 <div className="box">
@@ -66,7 +68,8 @@ export const Courses = () => {
                         <span>10 videos</span>
                     </div>
                     <h3 className="title">complete JS tutorial</h3>
-                    <a href="playlist.html" className="inline-btn">view playlist</a>
+                    <NavLink to={'/playlist'} className="inline-btn">View Playlist
+                    </NavLink>
                 </div>
 
                 <div className="box">
@@ -82,7 +85,8 @@ export const Courses = () => {
                         <span>10 videos</span>
                     </div>
                     <h3 className="title">complete Boostrap tutorial</h3>
-                    <a href="playlist.html" className="inline-btn">view playlist</a>
+                    <NavLink to={'/playlist'} className="inline-btn">View Playlist
+                    </NavLink>
                 </div>
 
                 <div className="box">
@@ -98,7 +102,8 @@ export const Courses = () => {
                         <span>10 videos</span>
                     </div>
                     <h3 className="title">complete JQuery tutorial</h3>
-                    <a href="playlist.html" className="inline-btn">view playlist</a>
+                    <NavLink to={'/playlist'} className="inline-btn">View Playlist
+                    </NavLink>
                 </div>
 
                 <div className="box">
@@ -114,7 +119,8 @@ export const Courses = () => {
                         <span>10 videos</span>
                     </div>
                     <h3 className="title">complete SASS tutorial</h3>
-                    <a href="playlist.html" className="inline-btn">view playlist</a>
+                    <NavLink to={'/playlist'} className="inline-btn">View Playlist
+                    </NavLink>
                 </div>
 
             </div>
