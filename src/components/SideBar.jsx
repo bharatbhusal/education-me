@@ -31,12 +31,12 @@ const SideBar = () => {
                 <img src={Pic1} className="image" alt="" />
                 <h3 className="name">shaikh anas</h3>
                 <p className="role">student</p>
-                <NavLink onClick={handleCloseButtonClick} to={'profile'} className="btn">view profile
+                <NavLink to={'profile'} className="btn">view profile
                 </NavLink>
             </div>
 
             <nav className="navbar">
-                <NavLink onClick={handleCloseButtonClick} to={'/'} className={({ isActive, isPending }) =>
+                <NavLink to={'/'} className={({ isActive, isPending }) =>
                     isActive
                         ? "active"
                         : isPending
@@ -46,7 +46,7 @@ const SideBar = () => {
                     </i><span>home</span>
                 </NavLink>
 
-                <NavLink onClick={handleCloseButtonClick} to={'about'} className={({ isActive, isPending }) =>
+                <NavLink to={'about'} className={({ isActive, isPending }) =>
                     isActive
                         ? "active"
                         : isPending
@@ -56,7 +56,7 @@ const SideBar = () => {
                     </i><span>about</span>
                 </NavLink>
 
-                <NavLink onClick={handleCloseButtonClick} to={'courses'} className={({ isActive, isPending }) =>
+                <NavLink to={'courses'} className={({ isActive, isPending }) =>
                     isActive
                         ? "active"
                         : isPending
@@ -66,7 +66,7 @@ const SideBar = () => {
                     </i><span>courses</span>
                 </NavLink>
 
-                <NavLink onClick={handleCloseButtonClick} to={'teachers'} className={({ isActive, isPending }) =>
+                <NavLink to={'teachers'} className={({ isActive, isPending }) =>
                     isActive
                         ? "active"
                         : isPending
@@ -76,7 +76,7 @@ const SideBar = () => {
                     </i><span>teachers</span>
                 </NavLink>
 
-                <NavLink onClick={handleCloseButtonClick} to={'contact'} className={({ isActive, isPending }) =>
+                <NavLink to={'contact'} className={({ isActive, isPending }) =>
                     isActive
                         ? "active"
                         : isPending
