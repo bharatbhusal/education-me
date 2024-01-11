@@ -1,5 +1,5 @@
 import React from 'react'
-import { IoMdMenu, IoMdSearch } from 'react-icons/io';
+import { IoMdMenu } from 'react-icons/io';
 
 const MenuButton = () => {
     const handleMenuButtonClick = () => {

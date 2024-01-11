@@ -1,14 +1,4 @@
 import React from 'react'
-import Pic1 from '../images/pic-1.jpg'
-import Thumb1 from '../images/thumb-1.png'
-import Thumb2 from '../images/thumb-2.png'
-import Thumb3 from '../images/thumb-3.png'
-import Thumb4 from '../images/thumb-4.png'
-import Thumb5 from '../images/thumb-5.png'
-import Thumb6 from '../images/thumb-6.png'
-import Thumb7 from '../images/thumb-7.png'
-import Thumb8 from '../images/thumb-8.png'
-import Thumb9 from '../images/thumb-9.png'
 import ContactImg from "../images/contact-img.svg"
 import { FaPhone } from "react-icons/fa";
 import { FaEnvelope } from "react-icons/fa";

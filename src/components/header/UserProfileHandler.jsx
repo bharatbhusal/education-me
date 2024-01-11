@@ -1,5 +1,5 @@
 import React from 'react'
-import { CiUser, CiDark } from 'react-icons/ci';
+import { CiUser } from 'react-icons/ci';
 import Pic1 from '../../images/pic-1.jpg'
 import { NavLink } from 'react-router-dom';
 const UserProfile = () => {

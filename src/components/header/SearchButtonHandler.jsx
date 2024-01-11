@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { IoMdMenu, IoMdSearch } from 'react-icons/io';
+import { IoMdSearch } from 'react-icons/io';
 
 const SearchButton = () => {
     const handleSearchButtonClick = () => {
