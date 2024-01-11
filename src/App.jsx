@@ -39,7 +39,6 @@ const App = () => {
             <Header />
             <SideBar />
             <div>
-
                 <Outlet />
             </div>
             <Footer />

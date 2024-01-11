@@ -1,4 +1,6 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
+import Teachers from '../Teachers'
 
 const QuickOptions = () => {
     return (
@@ -46,7 +48,9 @@ const QuickOptions = () => {
                 <div className="box">
                     <h3 className="title">become a tutor</h3>
                     <p className="tutor">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis, nam?</p>
-                    <a href="teachers.html" className="inline-btn">get started</a>
+                    <NavLink className="inline-btn" to={"teachers"}>
+                        get started
+                    </NavLink>
                 </div>
 
             </div>

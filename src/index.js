@@ -9,6 +9,7 @@ import App from "./App"
 import "./index.css"
 import Home from "./pages/Home"
 import About from "./pages/About"
+import { Courses as TopCourses } from './pages/home/Courses'
 
 import QuickOptions from './pages/home/QuickOptions'
 import Courses from './pages/Courses'
@@ -39,14 +40,13 @@ const router = createBrowserRouter([
         children: [
             {
                 errorElement: <>Error Page</>,
-                // errorElement: <ErrorPage />,
                 children: [
-                    // { index: true, element: <Index /> },
                     {
-                        path: "home",
-                        element: <Home />,
-                        // loader: contactLoader,
-                        // action: contactAction,
+                        index: true, element: <Home />
+                    },
+                    {
+                        path: "top-courses",
+                        element: <TopCourses />,
                     },
                     {
                         path: "about",
@@ -67,10 +67,34 @@ const router = createBrowserRouter([
                         path: "contact",
                         element: <Contact />,
                     },
+                    {
+                        path: "login",
+                        element: <Login />,
+                    },
+                    {
+                        path: "register",
+                        element: <Register />,
+                    },
+                    {
+                        path: "teacher-profile",
+                        element: <TeachProfile />,
+                    },
+                    {
+                        path: "update",
+                        element: <Update />,
+                    },
+                    {
+                        path: "watch-video",
+                        element: <WatchVideo />,
+                    },
+                    {
+                        path: "playlist",
+                        element: <PlayList />,
+                    },
                 ]
-            }
+            },
 
-        ]
+        ],
     },
 ])
 

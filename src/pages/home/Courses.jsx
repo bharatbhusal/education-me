@@ -1,4 +1,5 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
 import Pic2 from '../../images/pic-2.jpg'
 import Pic3 from '../../images/pic-3.jpg'
 import Pic4 from '../../images/pic-4.jpg'
@@ -12,7 +13,7 @@ import Thumb4 from '../../images/thumb-4.png'
 import Thumb5 from '../../images/thumb-5.png'
 import Thumb6 from '../../images/thumb-6.png'
 
-const Courses = () => {
+export const Courses = () => {
     return (
         <section className="courses">
 
@@ -119,7 +120,8 @@ const Courses = () => {
             </div>
 
             <div className="more-btn">
-                <a href="courses.html" className="inline-option-btn">view all courses</a>
+                <NavLink to={'/courses'} className="inline-option-btn">View all courses
+                </NavLink>
             </div>
 
         </section>
@@ -127,4 +129,4 @@ const Courses = () => {
     )
 }
 
-export default Courses
+export default { Courses }

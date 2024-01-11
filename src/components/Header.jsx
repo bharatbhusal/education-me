@@ -4,15 +4,15 @@ import { UserProfile, UserProfileButton } from './header/UserProfileHandler';
 import { SearchButton, SearchBox } from './header/SearchButtonHandler';
 import { MenuButton } from './header/MenuButtonHandler'
 import App from '../App';
+import { NavLink } from 'react-router-dom';
 const Header = () => {
 
 
     return (
         <header className="header">
             <section className="flex">
-                <a href="home.html" className="logo">
-                    Educate Me
-                </a>
+                <NavLink to={'/'} className="logo">Educate Me.
+                </NavLink>
                 <SearchBox />
 
                 <div className="icons">
