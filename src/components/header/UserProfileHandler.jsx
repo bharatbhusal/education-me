@@ -1,6 +1,7 @@
 import React from 'react'
 import { CiUser, CiDark } from 'react-icons/ci';
 import Pic1 from '../../images/pic-1.jpg'
+import { NavLink } from 'react-router-dom';
 const UserProfile = () => {
     return (
 
@@ -8,16 +9,16 @@ const UserProfile = () => {
             <img src={Pic1} className="image" alt="" />
             <h3 className="name">shaikh anas</h3>
             <p className="role">student</p>
-            <a href="profile.html" className="btn">
-                View Profile
-            </a>
+
+            <NavLink to={'/profile'} className="btn">View Profile
+            </NavLink>
             <div className="flex-btn">
-                <a href="login.html" className="option-btn">
-                    Login
-                </a>
-                <a href="register.html" className="option-btn">
-                    Register
-                </a>
+
+                <NavLink to={'/login'} className="option-btn">Login
+                </NavLink>
+
+                <NavLink to={'/register'} className="option-btn">Register
+                </NavLink>
             </div>
         </div>
     )
