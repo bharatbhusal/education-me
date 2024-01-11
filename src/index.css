@@ -2,6 +2,8 @@
 
 :root {
   --main-color: #a7c957;
+  --main-color-fade: #a7c957b1;
+
   --red: #e74c3c;
   --orange: #f39c12;
   --light-color: #888;
@@ -335,14 +337,16 @@ section {
   margin-right: 2.5rem;
 }
 .side-bar .navbar a.active {
-  background-color: var(--main-color);
-}
-.side-bar .navbar a.pending {
-  background-color: var(--light-color);
+  background-color: var(--main-color-fade);
+  color: var(--white);
 }
 
-.side-bar.active {
-  left: -30rem;
+.side-bar .navbar a.active span {
+  color: var(--white);
+}
+
+.side-bar .navbar a.pending {
+  background-color: var(--light-color);
 }
 
 .home-grid .box-container {
