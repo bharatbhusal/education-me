@@ -13,26 +13,26 @@ const Teachers = () => {
    return (
       <div>
 
-         <section class="teachers">
+         <section className="teachers">
 
-            <h1 class="heading">expert teachers</h1>
+            <h1 className="heading">expert teachers</h1>
 
-            <form action="" method="post" class="search-tutor">
-               <input type="text" name="search_box" placeholder="search tutors..." required maxlength="100" />
-               <button type="submit" class="fas fa-search" name="search_tutor"></button>
+            <form action="" method="post" className="search-tutor">
+               <input type="text" name="search_box" placeholder="search tutors..." required maxLength="100" />
+               <button type="submit" className="fas fa-search" name="search_tutor"></button>
             </form>
 
-            <div class="box-container">
+            <div className="box-container">
 
-               <div class="box offer">
+               <div className="box offer">
                   <h3>become a tutor</h3>
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, itaque ipsam fuga ex et aliquam.</p>
                   <NavLink to={'/register'} className="inline-btn">get started
                   </NavLink>
                </div>
 
-               <div class="box">
-                  <div class="tutor">
+               <div className="box">
+                  <div className="tutor">
                      <img src={Pic2} alt="" />
                      <div>
                         <h3>john deo</h3>
@@ -47,8 +47,8 @@ const Teachers = () => {
                   </NavLink>
                </div>
 
-               <div class="box">
-                  <div class="tutor">
+               <div className="box">
+                  <div className="tutor">
                      <img src={Pic3} alt="" />
                      <div>
                         <h3>john deo</h3>
@@ -62,8 +62,8 @@ const Teachers = () => {
                   </NavLink>
                </div>
 
-               <div class="box">
-                  <div class="tutor">
+               <div className="box">
+                  <div className="tutor">
                      <img src={Pic4} alt="" />
                      <div>
                         <h3>john deo</h3>
@@ -77,8 +77,8 @@ const Teachers = () => {
                   </NavLink>
                </div>
 
-               <div class="box">
-                  <div class="tutor">
+               <div className="box">
+                  <div className="tutor">
                      <img src={Pic5} alt="" />
                      <div>
                         <h3>john deo</h3>
@@ -92,8 +92,8 @@ const Teachers = () => {
                   </NavLink>
                </div>
 
-               <div class="box">
-                  <div class="tutor">
+               <div className="box">
+                  <div className="tutor">
                      <img src={Pic6} alt="" />
                      <div>
                         <h3>john deo</h3>
@@ -107,8 +107,8 @@ const Teachers = () => {
                   </NavLink>
                </div>
 
-               <div class="box">
-                  <div class="tutor">
+               <div className="box">
+                  <div className="tutor">
                      <img src={Pic7} alt="" />
                      <div>
                         <h3>john deo</h3>
@@ -122,8 +122,8 @@ const Teachers = () => {
                   </NavLink>
                </div>
 
-               <div class="box">
-                  <div class="tutor">
+               <div className="box">
+                  <div className="tutor">
                      <img src={Pic8} alt="" />
                      <div>
                         <h3>john deo</h3>

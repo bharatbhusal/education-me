@@ -20,15 +20,15 @@ const About = () => {
     return (
         <div>
 
-            <section class="about">
+            <section className="about">
 
-                <div class="row">
+                <div className="row">
 
-                    <div class="image">
+                    <div className="image">
                         <img src={AboutImg} alt="" />
                     </div>
 
-                    <div class="content">
+                    <div className="content">
                         <h3>why choose us?</h3>
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut dolorum quasi illo? Distinctio expedita commodi, nemo a quam error repellendus sint, fugiat quis numquam eum eveniet sequi aspernatur quaerat tenetur.</p>
                         <NavLink className="inline-btn" to={"/register"}>
@@ -38,18 +38,18 @@ const About = () => {
 
                 </div>
 
-                <div class="box-container">
+                <div className="box-container">
 
-                    <div class="box">
-                        <i class="fas fa-graduation-cap"><FaGraduationCap /></i>
+                    <div className="box">
+                        <i className="fas fa-graduation-cap"><FaGraduationCap /></i>
                         <div>
                             <h3>+10k</h3>
                             <p>online courses</p>
                         </div>
                     </div>
 
-                    <div class="box">
-                        <i class="fas fa-user-graduate"><FaUserGraduate />
+                    <div className="box">
+                        <i className="fas fa-user-graduate"><FaUserGraduate />
                         </i>
                         <div>
                             <h3>+40k</h3>
@@ -57,16 +57,16 @@ const About = () => {
                         </div>
                     </div>
 
-                    <div class="box">
-                        <i class="fas fa-chalkboard-user"><FaChalkboardTeacher /></i>
+                    <div className="box">
+                        <i className="fas fa-chalkboard-user"><FaChalkboardTeacher /></i>
                         <div>
                             <h3>+2k</h3>
                             <p>expert tutors</p>
                         </div>
                     </div>
 
-                    <div class="box">
-                        <i class="fas fa-briefcase"><FaBriefcase /></i>
+                    <div className="box">
+                        <i className="fas fa-briefcase"><FaBriefcase /></i>
                         <div>
                             <h3>100%</h3>
                             <p>job placement</p>
@@ -77,138 +77,138 @@ const About = () => {
 
             </section>
 
-            <section class="reviews">
+            <section className="reviews">
 
-                <h1 class="heading">student's reviews</h1>
+                <h1 className="heading">student's reviews</h1>
 
-                <div class="box-container">
+                <div className="box-container">
 
-                    <div class="box">
+                    <div className="box">
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus, suscipit a. Quibusdam, dignissimos consectetur. Sed ullam iusto eveniet qui aut quibusdam vero voluptate libero facilis fuga. Eligendi eaque molestiae modi?</p>
-                        <div class="student">
+                        <div className="student">
                             <img src={Pic2} alt="" />
                             <div>
                                 <h3>john deo</h3>
-                                <div class="stars">
-                                    <i class="fas fa-star"><FaStar />
+                                <div className="stars">
+                                    <i className="fas fa-star"><FaStar />
                                     </i>
-                                    <i class="fas fa-star"><FaStar />
+                                    <i className="fas fa-star"><FaStar />
                                     </i>
-                                    <i class="fas fa-star"><FaStar />
+                                    <i className="fas fa-star"><FaStar />
                                     </i>
-                                    <i class="fas fa-star"><FaStar />
+                                    <i className="fas fa-star"><FaStar />
                                     </i>
-                                    <i class="fas fa-star-half-alt"><FaStarHalfAlt />
+                                    <i className="fas fa-star-half-alt"><FaStarHalfAlt />
                                     </i>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="box">
+                    <div className="box">
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus, suscipit a. Quibusdam, dignissimos consectetur. Sed ullam iusto eveniet qui aut quibusdam vero voluptate libero facilis fuga. Eligendi eaque molestiae modi?</p>
-                        <div class="student">
+                        <div className="student">
                             <img src={Pic3} alt="" />
                             <div>
                                 <h3>john deo</h3>
-                                <div class="stars">
-                                    <i class="fas fa-star"><FaStar />
+                                <div className="stars">
+                                    <i className="fas fa-star"><FaStar />
                                     </i>
-                                    <i class="fas fa-star"><FaStar />
+                                    <i className="fas fa-star"><FaStar />
                                     </i>
-                                    <i class="fas fa-star"><FaStar />
+                                    <i className="fas fa-star"><FaStar />
                                     </i>
-                                    <i class="fas fa-star"><FaStar />
+                                    <i className="fas fa-star"><FaStar />
                                     </i>
-                                    <i class="fas fa-star-half-alt"><FaStarHalfAlt />
+                                    <i className="fas fa-star-half-alt"><FaStarHalfAlt />
                                     </i>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="box">
+                    <div className="box">
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus, suscipit a. Quibusdam, dignissimos consectetur. Sed ullam iusto eveniet qui aut quibusdam vero voluptate libero facilis fuga. Eligendi eaque molestiae modi?</p>
-                        <div class="student">
+                        <div className="student">
                             <img src={Pic4} alt="" />
                             <div>
                                 <h3>john deo</h3>
-                                <div class="stars">
-                                    <i class="fas fa-star"><FaStar />
+                                <div className="stars">
+                                    <i className="fas fa-star"><FaStar />
                                     </i>
-                                    <i class="fas fa-star"><FaStar />
+                                    <i className="fas fa-star"><FaStar />
                                     </i>
-                                    <i class="fas fa-star"><FaStar />
+                                    <i className="fas fa-star"><FaStar />
                                     </i>
-                                    <i class="fas fa-star"><FaStar />
+                                    <i className="fas fa-star"><FaStar />
                                     </i>
-                                    <i class="fas fa-star-half-alt"><FaStarHalfAlt />
+                                    <i className="fas fa-star-half-alt"><FaStarHalfAlt />
                                     </i>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="box">
+                    <div className="box">
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus, suscipit a. Quibusdam, dignissimos consectetur. Sed ullam iusto eveniet qui aut quibusdam vero voluptate libero facilis fuga. Eligendi eaque molestiae modi?</p>
-                        <div class="student">
+                        <div className="student">
                             <img src={Pic5} alt="" />
                             <div>
                                 <h3>john deo</h3>
-                                <div class="stars">
-                                    <i class="fas fa-star"><FaStar />
+                                <div className="stars">
+                                    <i className="fas fa-star"><FaStar />
                                     </i>
-                                    <i class="fas fa-star"><FaStar />
+                                    <i className="fas fa-star"><FaStar />
                                     </i>
-                                    <i class="fas fa-star"><FaStar />
+                                    <i className="fas fa-star"><FaStar />
                                     </i>
-                                    <i class="fas fa-star"><FaStar />
+                                    <i className="fas fa-star"><FaStar />
                                     </i>
-                                    <i class="fas fa-star-half-alt"><FaStarHalfAlt />
+                                    <i className="fas fa-star-half-alt"><FaStarHalfAlt />
                                     </i>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="box">
+                    <div className="box">
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus, suscipit a. Quibusdam, dignissimos consectetur. Sed ullam iusto eveniet qui aut quibusdam vero voluptate libero facilis fuga. Eligendi eaque molestiae modi?</p>
-                        <div class="student">
+                        <div className="student">
                             <img src={Pic6} alt="" />
                             <div>
                                 <h3>john deo</h3>
-                                <div class="stars">
-                                    <i class="fas fa-star"><FaStar />
+                                <div className="stars">
+                                    <i className="fas fa-star"><FaStar />
                                     </i>
-                                    <i class="fas fa-star"><FaStar />
+                                    <i className="fas fa-star"><FaStar />
                                     </i>
-                                    <i class="fas fa-star"><FaStar />
+                                    <i className="fas fa-star"><FaStar />
                                     </i>
-                                    <i class="fas fa-star"><FaStar />
+                                    <i className="fas fa-star"><FaStar />
                                     </i>
-                                    <i class="fas fa-star-half-alt"><FaStarHalfAlt />
+                                    <i className="fas fa-star-half-alt"><FaStarHalfAlt />
                                     </i>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="box">
+                    <div className="box">
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus, suscipit a. Quibusdam, dignissimos consectetur. Sed ullam iusto eveniet qui aut quibusdam vero voluptate libero facilis fuga. Eligendi eaque molestiae modi?</p>
-                        <div class="student">
+                        <div className="student">
                             <img src={Pic7} alt="" />
                             <div>
                                 <h3>john deo</h3>
-                                <div class="stars">
-                                    <i class="fas fa-star"><FaStar />
+                                <div className="stars">
+                                    <i className="fas fa-star"><FaStar />
                                     </i>
-                                    <i class="fas fa-star"><FaStar />
+                                    <i className="fas fa-star"><FaStar />
                                     </i>
-                                    <i class="fas fa-star"><FaStar />
+                                    <i className="fas fa-star"><FaStar />
                                     </i>
-                                    <i class="fas fa-star"><FaStar />
+                                    <i className="fas fa-star"><FaStar />
                                     </i>
-                                    <i class="fas fa-star-half-alt"><FaStarHalfAlt />
+                                    <i className="fas fa-star-half-alt"><FaStarHalfAlt />
                                     </i>
                                 </div>
                             </div>

@@ -24,169 +24,169 @@ import Thumb9 from '../images/thumb-9.png'
 const Courses = () => {
    return (
       <div>
-         <section class="courses">
+         <section className="courses">
 
-            <h1 class="heading">our courses</h1>
+            <h1 className="heading">our courses</h1>
 
-            <div class="box-container">
+            <div className="box-container" >
 
-               <div class="box">
-                  <div class="tutor">
+               <div className="box" >
+                  <div className="tutor" >
                      <img src={Pic2} alt="" />
-                     <div class="info">
+                     <div className="info" >
                         <h3>john deo</h3>
                         <span>21-10-2022</span>
-                     </div>
-                  </div>
-                  <div class="thumb">
+                     </div >
+                  </div >
+                  <div className="thumb" >
                      <img src={Thumb1} alt="" />
                      <span>10 videos</span>
-                  </div>
-                  <h3 class="title">complete HTML tutorial</h3>
+                  </div >
+                  <h3 className="title" > complete HTML tutorial</h3 >
                   <NavLink to={'/playlist'} className="inline-btn">View Playlist
                   </NavLink>
-               </div>
+               </div >
 
-               <div class="box">
-                  <div class="tutor">
+               <div className="box" >
+                  <div className="tutor" >
                      <img src={Pic3} alt="" />
-                     <div class="info">
+                     <div className="info" >
                         <h3>john deo</h3>
                         <span>21-10-2022</span>
-                     </div>
-                  </div>
-                  <div class="thumb">
+                     </div >
+                  </div >
+                  <div className="thumb" >
                      <img src={Thumb2} alt="" />
                      <span>10 videos</span>
-                  </div>
-                  <h3 class="title">complete CSS tutorial</h3>
+                  </div >
+                  <h3 className="title" > complete CSS tutorial</h3 >
                   <NavLink to={'/playlist'} className="inline-btn">View Playlist
                   </NavLink>
-               </div>
+               </div >
 
-               <div class="box">
-                  <div class="tutor">
+               <div className="box" >
+                  <div className="tutor" >
                      <img src={Pic4} alt="" />
-                     <div class="info">
+                     <div className="info" >
                         <h3>john deo</h3>
                         <span>21-10-2022</span>
-                     </div>
-                  </div>
-                  <div class="thumb">
+                     </div >
+                  </div >
+                  <div className="thumb" >
                      <img src={Thumb3} alt="" />
                      <span>10 videos</span>
-                  </div>
-                  <h3 class="title">complete JS tutorial</h3>
+                  </div >
+                  <h3 className="title" > complete JS tutorial</h3 >
                   <NavLink to={'/playlist'} className="inline-btn">View Playlist
                   </NavLink>
-               </div>
+               </div >
 
-               <div class="box">
-                  <div class="tutor">
+               <div className="box" >
+                  <div className="tutor" >
                      <img src={Pic5} alt="" />
-                     <div class="info">
+                     <div className="info" >
                         <h3>john deo</h3>
                         <span>21-10-2022</span>
-                     </div>
-                  </div>
-                  <div class="thumb">
+                     </div >
+                  </div >
+                  <div className="thumb" >
                      <img src={Thumb4} alt="" />
                      <span>10 videos</span>
-                  </div>
-                  <h3 class="title">complete Boostrap tutorial</h3>
+                  </div >
+                  <h3 className="title" > complete Boostrap tutorial</h3 >
                   <NavLink to={'/playlist'} className="inline-btn">View Playlist
                   </NavLink>
-               </div>
+               </div >
 
-               <div class="box">
-                  <div class="tutor">
+               <div className="box" >
+                  <div className="tutor" >
                      <img src={Pic6} alt="" />
-                     <div class="info">
+                     <div className="info" >
                         <h3>john deo</h3>
                         <span>21-10-2022</span>
-                     </div>
-                  </div>
-                  <div class="thumb">
+                     </div >
+                  </div >
+                  <div className="thumb" >
                      <img src={Thumb5} alt="" />
                      <span>10 videos</span>
-                  </div>
-                  <h3 class="title">complete JQuery tutorial</h3>
+                  </div >
+                  <h3 className="title" > complete JQuery tutorial</h3 >
                   <NavLink to={'/playlist'} className="inline-btn">View Playlist
                   </NavLink>
-               </div>
+               </div >
 
-               <div class="box">
-                  <div class="tutor">
+               <div className="box" >
+                  <div className="tutor" >
                      <img src={Pic7} alt="" />
-                     <div class="info">
+                     <div className="info" >
                         <h3>john deo</h3>
                         <span>21-10-2022</span>
-                     </div>
-                  </div>
-                  <div class="thumb">
+                     </div >
+                  </div >
+                  <div className="thumb" >
                      <img src={Thumb6} alt="" />
                      <span>10 videos</span>
-                  </div>
-                  <h3 class="title">complete SASS tutorial</h3>
+                  </div >
+                  <h3 className="title" > complete SASS tutorial</h3 >
                   <NavLink to={'/playlist'} className="inline-btn">View Playlist
                   </NavLink>
-               </div>
+               </div >
 
-               <div class="box">
-                  <div class="tutor">
+               <div className="box" >
+                  <div className="tutor" >
                      <img src={Pic8} alt="" />
-                     <div class="info">
+                     <div className="info" >
                         <h3>john deo</h3>
                         <span>21-10-2022</span>
-                     </div>
-                  </div>
-                  <div class="thumb">
+                     </div >
+                  </div >
+                  <div className="thumb" >
                      <img src={Thumb7} alt="" />
                      <span>10 videos</span>
-                  </div>
-                  <h3 class="title">complete PHP tutorial</h3>
+                  </div >
+                  <h3 className="title" > complete PHP tutorial</h3 >
                   <NavLink to={'/playlist'} className="inline-btn">View Playlist
                   </NavLink>
-               </div>
+               </div >
 
-               <div class="box">
-                  <div class="tutor">
+               <div className="box" >
+                  <div className="tutor" >
                      <img src={Pic9} alt="" />
-                     <div class="info">
+                     <div className="info" >
                         <h3>john deo</h3>
                         <span>21-10-2022</span>
-                     </div>
-                  </div>
-                  <div class="thumb">
+                     </div >
+                  </div >
+                  <div className="thumb" >
                      <img src={Thumb8} alt="" />
                      <span>10 videos</span>
-                  </div>
-                  <h3 class="title">complete MySQL tutorial</h3>
+                  </div >
+                  <h3 className="title" > complete MySQL tutorial</h3 >
                   <NavLink to={'/playlist'} className="inline-btn">View Playlist
                   </NavLink>
-               </div>
+               </div >
 
-               <div class="box">
-                  <div class="tutor">
+               <div className="box" >
+                  <div className="tutor" >
                      <img src={Pic1} alt="" />
-                     <div class="info">
+                     <div className="info" >
                         <h3>john deo</h3>
                         <span>21-10-2022</span>
-                     </div>
-                  </div>
-                  <div class="thumb">
+                     </div >
+                  </div >
+                  <div className="thumb" >
                      <img src={Thumb9} alt="" />
                      <span>10 videos</span>
-                  </div>
-                  <h3 class="title">complete react tutorial</h3>
+                  </div >
+                  <h3 className="title" > complete react tutorial</h3 >
                   <NavLink to={'/playlist'} className="inline-btn">View Playlist
                   </NavLink>
-               </div>
+               </div >
 
-            </div>
+            </div >
 
-         </section>
-      </div>
+         </section >
+      </div >
    )
 }
 

@@ -32,24 +32,24 @@ const Playlist = () => {
    return (
       <div>
 
-         <section class="playlist-details">
+         <section className="playlist-details">
 
-            <h1 class="heading">playlist details</h1>
+            <h1 className="heading">playlist details</h1>
 
-            <div class="row">
+            <div className="row">
 
-               <div class="column">
-                  <form action="" method="post" class="save-playlist">
-                     <button type="submit"><i class="far fa-bookmark"></i> <span>save playlist</span></button>
+               <div className="column">
+                  <form action="" method="post" className="save-playlist">
+                     <button type="submit"><i className="far fa-bookmark"></i> <span>save playlist</span></button>
                   </form>
 
-                  <div class="thumb">
+                  <div className="thumb">
                      <img src={Thumb1} alt="" />
                      <span>10 videos</span>
                   </div>
                </div>
-               <div class="column">
-                  <div class="tutor">
+               <div className="column">
+                  <div className="tutor">
                      <img src={Pic2} alt="" />
                      <div>
                         <h3>john deo</h3>
@@ -57,7 +57,7 @@ const Playlist = () => {
                      </div>
                   </div>
 
-                  <div class="details">
+                  <div className="details">
                      <h3>complete HTML tutorial</h3>
                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum minus reiciendis, error sunt veritatis exercitationem deserunt velit doloribus itaque voluptate.</p>
 
@@ -69,40 +69,40 @@ const Playlist = () => {
 
          </section>
 
-         <section class="playlist-videos">
+         <section className="playlist-videos">
 
-            <h1 class="heading">playlist videos</h1>
+            <h1 className="heading">playlist videos</h1>
 
-            <div class="box-container">
-               <NavLink to={'/watch-video'} className="box"><i class="fas fa-play"></i>
+            <div className="box-container">
+               <NavLink to={'/watch-video'} className="box"><i className="fas fa-play"></i>
                   <img src={Post11} alt="" />
                   <h3>complete HTML tutorial (part 01)</h3>
                </NavLink>
 
 
-               <NavLink to={'/watch-video'} className="box"><i class="fas fa-play"></i>
+               <NavLink to={'/watch-video'} className="box"><i className="fas fa-play"></i>
                   <img src={Post12} alt="" />
                   <h3>complete HTML tutorial (part 02)</h3>
                </NavLink>
 
 
 
-               <NavLink to={'/watch-video'} className="box"><i class="fas fa-play"></i>
+               <NavLink to={'/watch-video'} className="box"><i className="fas fa-play"></i>
                   <img src={Post13} alt="" />
                   <h3>complete HTML tutorial (part 03)</h3>
                </NavLink>
 
-               <NavLink to={'/watch-video'} className="box"><i class="fas fa-play"></i>
+               <NavLink to={'/watch-video'} className="box"><i className="fas fa-play"></i>
                   <img src={Post14} alt="" />
                   <h3>complete HTML tutorial (part 04)</h3>
                </NavLink>
 
-               <NavLink to={'/watch-video'} className="box"><i class="fas fa-play"></i>
+               <NavLink to={'/watch-video'} className="box"><i className="fas fa-play"></i>
                   <img src={Post15} alt="" />
                   <h3>complete HTML tutorial (part 05)</h3>
                </NavLink>
 
-               <NavLink to={'/watch-video'} className="box"><i class="fas fa-play"></i>
+               <NavLink to={'/watch-video'} className="box"><i className="fas fa-play"></i>
                   <img src={Post16} alt="" />
                   <h3>complete HTML tutorial (part 06)</h3>
                </NavLink>

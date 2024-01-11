@@ -19,7 +19,7 @@ const SearchButton = () => {
 
 const SearchBox = () => {
     return (
-        <form action="search.html" method="post" className="search-form">
+        <form action="" method="post" className="search-form">
             <input
                 type="text"
                 name="search_box"

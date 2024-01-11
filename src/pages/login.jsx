@@ -2,15 +2,18 @@ import React from 'react'
 
 const Login = () => {
 
+  const validateForm = () => {
+    console.log("validated")
+  }
   return (
     <div>
 
-      <section class="form-container">
+      <section className="form-container">
         <form
-          action="home.html"
+          action=""
           method="post"
-          enctype="multipart/form-data"
-          onsubmit="return validateForm()"
+          encType="multipart/form-data"
+          onSubmit={validateForm}
         >
           <h3>login now</h3>
           <p>your email <span>*</span></p>
@@ -19,8 +22,8 @@ const Login = () => {
             name="email"
             placeholder="enter your email"
             required
-            maxlength="50"
-            class="box"
+            maxLength="50"
+            className="box"
           />
           <p>your password <span>*</span></p>
           <input
@@ -28,11 +31,11 @@ const Login = () => {
             name="pass"
             placeholder="enter your password"
             required
-            maxlength="20"
-            class="box"
+            maxLength="20"
+            className="box"
           />
 
-          <input type="submit" value="login new" name="submit" class="btn" />
+          <input type="submit" value="login new" name="submit" className="btn" />
         </form>
       </section>
 
