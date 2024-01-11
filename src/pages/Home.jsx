@@ -4,10 +4,10 @@ import QuickOptions from './home/QuickOptions'
 
 const Home = () => {
     return (
-        <>
+        <div>
             <QuickOptions />
             <Courses />
-        </>
+        </div>
     )
 }
 

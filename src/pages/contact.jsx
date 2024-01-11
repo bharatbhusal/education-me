@@ -35,7 +35,7 @@ const Contact = () => {
                <div className="box">
                   <i className="fas fa-phone"><FaPhone />
                   </i>
-                  <h3>phone number</h3>
+                  <h3>Phone Number</h3>
                   <a href="tel:7416476507">741-647-6507</a>
                   <a href="tel:9662476507">966-247-6507</a>
                </div>
@@ -43,7 +43,7 @@ const Contact = () => {
                <div className="box">
                   <i className="fas fa-envelope"><FaEnvelope />
                   </i>
-                  <h3>email address</h3>
+                  <h3>Email Address</h3>
                   <a href="mailto:bharatbhusal78@gmail.com">bharatbhusal78@gmail.com</a>
                   <a href="mailto:bharatbhusal0.2@gmail.com">bharatbhusal0.2@gmail.com</a>
                </div>
@@ -51,7 +51,7 @@ const Contact = () => {
                <div className="box">
                   <i className="fas fa-map-marker-alt"><FaMapLocationDot />
                   </i>
-                  <h3>office address</h3>
+                  <h3>Office Address</h3>
                   <a href="#">flat no. 1, a-1 building, jogeshwari, mumbai, india - 400104</a>
                </div>
 

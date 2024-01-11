@@ -3,7 +3,7 @@ import Pic1 from '../images/pic-1.jpg'
 import { FaComment } from "react-icons/fa";
 import { FaBookmark } from "react-icons/fa6";
 import { FaHeart } from "react-icons/fa";
-
+import { NavLink } from 'react-router-dom';
 
 const Profile = () => {
    return (
@@ -18,7 +18,8 @@ const Profile = () => {
                   <img src={Pic1} alt="" />
                   <h3>shaikh anas</h3>
                   <p>student</p>
-                  <a href="update.html" className="inline-btn">update profile</a>
+                  <NavLink to={'/update'} className="inline-btn">Update Profile
+                  </NavLink>
                </div>
 
                <div className="box-container">

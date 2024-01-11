@@ -27,7 +27,7 @@ const App = () => {
         <div>
             <Header />
             <SideBar />
-            <div>
+            <div className='outlet'>
                 <Outlet />
             </div>
             <Footer />

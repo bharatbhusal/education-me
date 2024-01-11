@@ -60,13 +60,25 @@ body.dark {
 }
 
 body.active {
-  padding-left: 0;
+  /* padding-left: 0; */
+  width: 100%;
+}
+.outlet {
+  min-height: calc(100vh - 20rem);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
 }
 
+.outlet > div {
+  max-width: 150rem;
+}
 section {
   padding: 2rem;
   margin: 0 auto;
-  max-width: 1200px;
+  /* max-width: 1200px; */
 }
 
 .heading {
@@ -262,29 +274,6 @@ section {
   height: 100vh;
   border-right: var(--border);
   z-index: 1200;
-}
-
-.side-bar #close-btn {
-  text-align: right;
-  padding: 2rem;
-  display: none;
-}
-
-.side-bar #close-btn i {
-  text-align: right;
-  font-size: 2.5rem;
-  background: var(--red);
-  border-radius: 0.5rem;
-  color: var(--white);
-  cursor: pointer;
-  height: 4.5rem;
-  width: 4.5rem;
-  line-height: 4.5rem;
-  text-align: center;
-}
-
-.side-bar #close-btn i:hover {
-  background-color: var(--black);
 }
 
 .side-bar .profile {
@@ -534,8 +523,8 @@ section {
 }
 
 .courses .box-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  display: flex;
+  flex-wrap: wrap;
   gap: 1.5rem;
   justify-content: center;
   align-items: flex-start;
@@ -1521,10 +1510,6 @@ section {
   .side-bar {
     left: -30rem;
     transition: 0.2s linear;
-  }
-
-  .side-bar #close-btn {
-    display: block;
   }
 
   .side-bar.active {

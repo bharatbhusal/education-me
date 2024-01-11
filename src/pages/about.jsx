@@ -10,7 +10,6 @@ import StudentReview from './about/StudentReview';
 const About = () => {
     return (
         <div>
-
             <section className="about">
                 <div className="row">
                     <div className="image">
