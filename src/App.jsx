@@ -25,12 +25,14 @@ const App = () => {
 
     return (
         <div>
-            <Header />
             <SideBar />
-            <div className='outlet'>
-                <Outlet />
+            <div>
+                <Header />
+                <div className='outlet'>
+                    <Outlet />
+                </div>
+                <Footer />
             </div>
-            <Footer />
         </div>
     )
 }

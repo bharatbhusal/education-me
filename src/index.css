@@ -49,6 +49,7 @@ html::-webkit-scrollbar-thumb {
 body {
   background-color: var(--light-bg);
   padding-left: 30rem;
+  transition: 0.2s linear;
 }
 
 body.dark {
@@ -60,9 +61,11 @@ body.dark {
 }
 
 body.active {
-  /* padding-left: 0; */
-  width: 100%;
+  padding-left: 0;
+  /* width: 100%; */
+  transition: 0.2s linear;
 }
+
 .outlet {
   min-height: calc(100vh - 20rem);
   width: 100%;
@@ -274,6 +277,19 @@ section {
   height: 100vh;
   border-right: var(--border);
   z-index: 1200;
+}
+.side-bar.active {
+  left: -30rem;
+  /* transition: 0.2s linear; */
+}
+
+.side-bar {
+  left: 0;
+  border-right: 0;
+  transition: 0.2s linear;
+}
+.side-bar.active + .side-bar {
+  display: none;
 }
 
 .side-bar .profile {

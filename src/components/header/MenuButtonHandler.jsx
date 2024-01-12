@@ -7,6 +7,7 @@ const MenuButton = () => {
         const body = document.body;
         sideBar.classList.toggle('active');
         body.classList.toggle('active');
+        console.log("sid bar clicked")
     };
     return (
         <div id="menu-btn" className="fas fa-bars" onClick={handleMenuButtonClick}>
