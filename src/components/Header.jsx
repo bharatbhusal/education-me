@@ -10,9 +10,8 @@ const Header = () => {
     return (
         <header className="header">
             <section className="flex">
-                <NavLink to={'/'} className="logo">Educate Me.
-                </NavLink>
-                <SearchBox />
+
+                <UserProfile />
 
                 <div className="icons">
                     <MenuButton />
@@ -20,7 +19,9 @@ const Header = () => {
                     <UserProfileButton />
                     <DarkModeToggleButton />
                 </div>
-                <UserProfile />
+                <SearchBox />
+                <NavLink to={'/'} className="logo">Educate Me.
+                </NavLink>
             </section>
         </header>
     );

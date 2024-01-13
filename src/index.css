@@ -227,13 +227,13 @@ section {
 .header .flex .profile {
   position: absolute;
   top: 120%;
-  right: 2rem;
+  left: 2rem;
   background-color: var(--white);
   border-radius: 0.5rem;
   padding: 1.5rem;
   text-align: center;
   overflow: hidden;
-  transform-origin: top right;
+  transform-origin: top left;
   transform: scale(0);
   transition: 0.2s linear;
   width: 30rem;
@@ -287,9 +287,6 @@ section {
   left: 0;
   border-right: 0;
   transition: 0.2s linear;
-}
-.side-bar.active + .side-bar {
-  display: none;
 }
 
 .side-bar .profile {
