@@ -8,19 +8,19 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom"
 import App from "./App"
 import "./index.css"
 import Home from "./pages/Home"
-import About from "./pages/About"
+import About from "./pages/about"
 import { Courses as TopCourses } from './pages/home/Courses'
 
 import QuickOptions from './pages/home/QuickOptions'
-import Courses from './pages/Courses'
-import Teachers from './pages/Teachers'
+import Courses from './pages/courses'
+import Teachers from './pages/teachers'
 import TeachProfile from './pages/TeacherProfile'
-import Contact from './pages/Contact'
-import Login from './pages/Login'
-import PlayList from './pages/Playlist'
-import Profile from './pages/Profile'
-import Register from './pages/Register'
-import Update from './pages/Update'
+import Contact from './pages/contact'
+import Login from './pages/login'
+import PlayList from './pages/playlist'
+import Profile from './pages/profile'
+import Register from './pages/register'
+import Update from './pages/update'
 import WatchVideo from './pages/WatchVideo'
 
 // Getting the DOM element with the id "root"
