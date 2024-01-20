@@ -3,12 +3,40 @@ import { Form, useNavigate } from 'react-router-dom';
 
 const Login = () => {
   const navigate = useNavigate()
+
   const validateForm = (e) => {
-    e.preventDefault(); // Prevents the default form submission behavior
-    console.log("validated");
-    console.log("Email:", e.target.email.value);
-    console.log("Password:", e.target.pass.value);
-    navigate('/')
+    e.preventDefault();
+    const loginData = {
+      email: e.target.email.value,
+      password: e.target.pass.value,
+    };
+
+    const storedData = localStorage.getItem('xmlData');
+    if (storedData) {
+      const parser = new DOMParser();
+      const xmlDoc = parser.parseFromString(storedData, 'application/xml');
+
+      const users = xmlDoc.getElementsByTagName('user');
+      let validUser = false;
+
+      for (let i = 0; i < users.length; i++) {
+        const userEmail = users[i].getElementsByTagName('email')[0].textContent;
+        const userPassword = users[i].getElementsByTagName('password')[0].textContent;
+
+        if (userEmail === loginData.email && userPassword === loginData.password) {
+          validUser = true;
+          break;
+        }
+      }
+
+      if (validUser) {
+        navigate('/');
+      } else {
+        alert('Invalid login credentials');
+      }
+    } else {
+      alert('User not registered');
+    }
   };
 
   return (
