@@ -12,29 +12,35 @@ const Login = () => {
     };
 
     const storedData = localStorage.getItem('xmlData');
-    if (storedData) {
+    if (storedData)
+    {
       const parser = new DOMParser();
       const xmlDoc = parser.parseFromString(storedData, 'application/xml');
 
       const users = xmlDoc.getElementsByTagName('user');
       let validUser = false;
 
-      for (let i = 0; i < users.length; i++) {
+      for (let i = 0; i < users.length; i++)
+      {
         const userEmail = users[i].getElementsByTagName('email')[0].textContent;
         const userPassword = users[i].getElementsByTagName('password')[0].textContent;
 
-        if (userEmail === loginData.email && userPassword === loginData.password) {
+        if (userEmail === loginData.email && userPassword === loginData.password)
+        {
           validUser = true;
           break;
         }
       }
 
-      if (validUser) {
+      if (validUser)
+      {
         navigate('/');
-      } else {
+      } else
+      {
         alert('Invalid login credentials');
       }
-    } else {
+    } else
+    {
       alert('User not registered');
     }
   };
