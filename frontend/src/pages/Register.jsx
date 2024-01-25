@@ -47,8 +47,8 @@ const Register = () => {
                <input type="password" name="pass" placeholder="enter your password" required maxLength="20" className="box" />
                <p>confirm password <span>*</span></p>
                <input type="password" name="c_pass" placeholder="confirm your password" required maxLength="20" className="box" />
-               <p>select profile <span>*</span></p>
-               <input type="file" accept="image/*" required className="box" />
+               {/* <p>select profile <span>*</span></p> */}
+               {/* <input type="file" accept="image/*" required className="box" /> */}
                <input type="submit" value="register new" name="submit" className="btn" />
             </form>
 
