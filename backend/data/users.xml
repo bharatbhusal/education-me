@@ -1,13 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <users>
-    <user>
-        <id>1111</id>
-        <name>bharat</name>
-        <email>bharatbhusal78@gmail.com</email>
-        <password>xyza</password>
-    </user>
-    <user>
-        <name>nayana</name>
-        <email>nayan@gmail.com</email>
-        <password>abced</password>
-    </user>
+  <user>
+    <id>1234</id>
+    <name>sdfasdfds</name>
+    <email>bhusal@gamil.com</email>
+    <password>sssss</password>
+  </user>
 </users>
