@@ -1,30 +1,79 @@
+// server.js
 const express = require('express');
-const bodyParser = require('body-parser');
+const xml2js = require('xml2js');
 const fs = require('fs');
-const { parseString, Builder } = require('xml2js');
+const bodyParser = require('body-parser');
 
 const app = express();
-const port = 3001; // You can change this to any available port
+const PORT = 3001;
 
-app.use(bodyParser.text({ type: 'application/xml' }));
+// Middleware to parse JSON bodies
+app.use(bodyParser.json());
 
-// Endpoint to read XML data
-app.get('api/getXmlData', (req, res) => {
-    // Replace 'users.xml' with the path to your XML file
-    const xmlData = fs.readFileSync('data/users.xml', 'utf-8');
-    res.send(xmlData);
+// GET endpoint to retrieve XML data
+app.get('/users', (req, res) => {
+    fs.readFile('./data/users.xml', 'utf-8', (err, data) => {
+        if (err)
+        {
+            console.error(err);
+            return res.status(500).send('Error reading XML file');
+        }
+
+        // Parse XML to JSON
+        xml2js.parseString(data, (parseErr, result) => {
+            if (parseErr)
+            {
+                console.error(parseErr);
+                return res.status(500).send('Error parsing XML');
+            }
+            res.json(result);
+        });
+    });
 });
 
-// Endpoint to update XML data
-app.post('/api/updateXmlData', (req, res) => {
-    const updatedXml = req.body;
+// Function to compare input string with names of users and return details of matching users
+const findMatchingUsers = (content, input) => {
+    return content.filter((each) => each.name[0] === input);
+};
 
-    // Replace 'users.xml' with the path to your XML file
-    fs.writeFileSync('data/users.xml', updatedXml, 'utf-8');
+// GET endpoint to retrieve XML data
+app.get('/users/:user', (req, res) => {
+    const user = req.params["user"].toLocaleLowerCase()
+    fs.readFile('./data/users.xml', 'utf-8', (err, data) => {
+        if (err)
+        {
+            console.error(err);
+            return res.status(500).send('Error reading XML file');
+        }
 
-    res.send('XML data updated successfully');
+        // Parse XML to JSON
+        xml2js.parseString(data, (parseErr, result) => {
+            if (parseErr)
+            {
+                console.error(parseErr);
+                return res.status(500).send('Error parsing XML');
+            }
+            res.json(findMatchingUsers(result['users']['user'], user));
+        });
+    });
 });
 
-app.listen(port, () => {
-    console.log(`Server is running on http://localhost:${port}`);
+// POST endpoint to save XML data
+app.post('/users', (req, res) => {
+    const xmlBuilder = new xml2js.Builder();
+    const xml = xmlBuilder.buildObject(req.body);
+
+    // Write XML to file
+    fs.writeFile('./data/users.xml', xml, (err) => {
+        if (err)
+        {
+            console.error(err);
+            return res.status(500).send('Error writing XML file');
+        }
+        res.send('XML data saved successfully');
+    });
+});
+
+app.listen(PORT, () => {
+    console.log(`Server is running on http://localhost:${PORT}`);
 });

@@ -1,7 +1,13 @@
 <users>
     <user>
-        <name>Bharat Bhusal</name>
+        <id>1111</id>
+        <name>bharat</name>
         <email>bharatbhusal78@gmail.com</email>
-        <password>eNx8mQhbVM8</password>
+        <password>xyza</password>
+    </user>
+    <user>
+        <name>nayana</name>
+        <email>nayan@gmail.com</email>
+        <password>abced</password>
     </user>
 </users>
