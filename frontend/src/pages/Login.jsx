@@ -1,10 +1,37 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Form, useNavigate } from 'react-router-dom';
 
 const Login = () => {
   const navigate = useNavigate();
-  const [user, setUser] = useState(null)
-  const [credentials, setCredentials] = useState()
+  const [user, setUser] = useState(null);
+  const [credentials, setCredentials] = useState({
+    email: '',
+    password: '',
+  });
+
+  useEffect(() => {
+    const fetchUserData = async () => {
+      try
+      {
+        const response = await fetch(`users/${credentials.email}`);
+        if (!response.ok)
+        {
+          throw new Error('Error fetching users');
+        }
+        const data = await response.json();
+        setUser(data);
+      } catch (error)
+      {
+        console.error(error.message);
+      }
+    };
+
+    if (credentials.email)
+    {
+      fetchUserData();
+    }
+  }, [credentials.email]);
+
   const validateForm = async (e) => {
     e.preventDefault();
     const loginData = {
@@ -12,26 +39,16 @@ const Login = () => {
       password: e.target.pass.value,
     };
     setCredentials(loginData);
-
-    try
-    {
-      const response = await fetch(`users/${credentials['email']}`);
-      if (!response.ok)
-      {
-        throw new Error('Error fetching users');
-      }
-
-      const data = await response.json();
-      setUser(data);
-      console.log(user, credentials)
-      if (credentials.email === user.email[0] && credentials.password === user.password[0])
-        navigate('/');
-
-    } catch (error)
-    {
-      console.error(error.message);
-    }
   };
+
+  useEffect(() => {
+    if (user && credentials.email === user.email[0] && credentials.password === user.password[0])
+    {
+      navigate('/');
+    }
+  }, [user, credentials, navigate]);
+
+
 
   return (
     <div>
@@ -63,7 +80,6 @@ const Login = () => {
 
           <input type="submit" value="login new" name="submit" className="btn" />
         </Form>
-        {/* {error && <p>{error}</p>} */}
       </section>
     </div>
   );
