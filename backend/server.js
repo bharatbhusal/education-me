@@ -29,10 +29,10 @@ app.get('/users', (req, res) => {
         });
     });
 });
-
 // Function to compare input string with names of users and return details of matching users
 const findMatchingUsers = (content, input) => {
-    return content.filter((each) => each.email[0] === input)[0];
+    const matchingUser = content.find((each) => each.email[0] === input);
+    return matchingUser || null;
 };
 
 // GET endpoint to retrieve XML data
@@ -52,7 +52,16 @@ app.get('/users/:user', (req, res) => {
                 console.error(parseErr);
                 return res.status(500).send('Error parsing XML');
             }
-            res.json(findMatchingUsers(result['users']['user'], user));
+
+            const matchingUser = findMatchingUsers(result['users']['user'], user);
+
+            if (matchingUser)
+            {
+                res.json(matchingUser);
+            } else
+            {
+                res.status(404).send('User not found');
+            }
         });
     });
 });

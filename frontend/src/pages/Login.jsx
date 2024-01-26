@@ -23,6 +23,7 @@ const Login = () => {
       } catch (error)
       {
         console.error(error.message);
+        alert("User not registered")
       }
     };
 
@@ -42,9 +43,20 @@ const Login = () => {
   };
 
   useEffect(() => {
-    if (user && credentials.email === user.email[0] && credentials.password === user.password[0])
+    try
     {
-      navigate('/');
+      if (user && credentials.email === user.email[0] && credentials.password === user.password[0])
+      {
+        navigate('/');
+      }
+
+      if (credentials && user && credentials.password !== user.password[0])
+        throw new Error("Password did not match")
+    }
+    catch (error)
+    {
+      console.error(error.message)
+      alert("Password did not match")
     }
   }, [user, credentials, navigate]);
 
