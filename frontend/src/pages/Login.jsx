@@ -1,47 +1,35 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Form, useNavigate } from 'react-router-dom';
 
 const Login = () => {
-  const navigate = useNavigate()
-
-  const validateForm = (e) => {
+  const navigate = useNavigate();
+  const [user, setUser] = useState(null)
+  const [credentials, setCredentials] = useState()
+  const validateForm = async (e) => {
     e.preventDefault();
     const loginData = {
       email: e.target.email.value,
       password: e.target.pass.value,
     };
+    setCredentials(loginData);
 
-    const storedData = localStorage.getItem('xmlData');
-    if (storedData)
+    try
     {
-      const parser = new DOMParser();
-      const xmlDoc = parser.parseFromString(storedData, 'application/xml');
-
-      const users = xmlDoc.getElementsByTagName('user');
-      let validUser = false;
-
-      for (let i = 0; i < users.length; i++)
+      const response = await fetch(`users/${credentials['email']}`);
+      if (!response.ok)
       {
-        const userEmail = users[i].getElementsByTagName('email')[0].textContent;
-        const userPassword = users[i].getElementsByTagName('password')[0].textContent;
-
-        if (userEmail === loginData.email && userPassword === loginData.password)
-        {
-          validUser = true;
-          break;
-        }
+        throw new Error('Error fetching users');
       }
 
-      if (validUser)
-      {
+      const data = await response.json();
+      setUser(data);
+      console.log(user, credentials)
+      if (credentials.email === user.email[0] && credentials.password === user.password[0])
         navigate('/');
-      } else
-      {
-        alert('Invalid login credentials');
-      }
-    } else
+
+    } catch (error)
     {
-      alert('User not registered');
+      console.error(error.message);
     }
   };
 
@@ -75,6 +63,7 @@ const Login = () => {
 
           <input type="submit" value="login new" name="submit" className="btn" />
         </Form>
+        {/* {error && <p>{error}</p>} */}
       </section>
     </div>
   );

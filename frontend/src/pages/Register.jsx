@@ -1,61 +1,103 @@
-import React from 'react'
+import React from 'react';
 import { Form, useNavigate } from 'react-router-dom';
 
 const Register = () => {
    const navigate = useNavigate();
 
-   let xmlDoc;
-
-   const handleRegistration = (e) => {
+   const handleRegistration = async (e) => {
       e.preventDefault();
+
       const registrationData = {
+         id: crypto.randomUUID(),
          name: e.target.name.value,
          email: e.target.email.value,
          password: e.target.pass.value,
       };
 
-      const existingXMLData = localStorage.getItem('xmlData') || '<users></users>';
-      const parser = new DOMParser();
-      const xmlDoc = parser.parseFromString(existingXMLData, 'application/xml');
+      try
+      {
+         const response = await fetch('/users', {
+            method: 'POST',
+            headers: {
+               'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(registrationData),
+         });
 
-      const newUser = xmlDoc.createElement('user');
-      newUser.innerHTML = `
-    <name>${registrationData.name}</name>
-    <email>${registrationData.email}</email>
-    <password>${registrationData.password}</password>
-  `;
+         if (!response.ok)
+         {
+            throw new Error('Network response was not ok');
+         }
 
-      xmlDoc.documentElement.appendChild(newUser);
+         const result = await response.text();
+         console.log(result); // handle the result as needed
 
-      localStorage.setItem('xmlData', new XMLSerializer().serializeToString(xmlDoc));
-
-
-      navigate('/login');
+         navigate('/login');
+      } catch (error)
+      {
+         console.error('Error:', error.message);
+      }
    };
+
    return (
       <div>
-
          <section className="form-container">
-
-            <form action="" method="post" encType="multipart/form-data" onSubmit={handleRegistration}>
-               <h3>register now</h3>
-               <p>your name <span>*</span></p>
-               <input type="text" name="name" placeholder="enter your name" required maxLength="50" className="box" pattern="[A-Za-z ]+" title="Alphabets and spaces only" />
-               <p>your email <span>*</span></p>
-               <input type="email" name="email" placeholder="enter your email" required maxLength="50" className="box" title="Must include a valid mail id" />
-               <p>your password <span>*</span></p>
-               <input type="password" name="pass" placeholder="enter your password" required maxLength="20" className="box" />
-               <p>confirm password <span>*</span></p>
-               <input type="password" name="c_pass" placeholder="confirm your password" required maxLength="20" className="box" />
-               {/* <p>select profile <span>*</span></p> */}
-               {/* <input type="file" accept="image/*" required className="box" /> */}
-               <input type="submit" value="register new" name="submit" className="btn" />
+            <form
+               action=""
+               method="post"
+               encType="multipart/form-data"
+               onSubmit={handleRegistration}
+            >
+               <h3>Register Now</h3>
+               <p>Your Name <span>*</span></p>
+               <input
+                  type="text"
+                  name="name"
+                  placeholder="Enter your name"
+                  required
+                  maxLength="50"
+                  className="box"
+                  pattern="[A-Za-z ]+"
+                  title="Alphabets and spaces only"
+               />
+               <p>Your Email <span>*</span></p>
+               <input
+                  type="email"
+                  name="email"
+                  placeholder="Enter your email"
+                  required
+                  maxLength="50"
+                  className="box"
+                  title="Must include a valid mail id"
+               />
+               <p>Your Password <span>*</span></p>
+               <input
+                  type="password"
+                  name="pass"
+                  placeholder="Enter your password"
+                  required
+                  maxLength="20"
+                  className="box"
+               />
+               <p>Confirm Password <span>*</span></p>
+               <input
+                  type="password"
+                  name="c_pass"
+                  placeholder="Confirm your password"
+                  required
+                  maxLength="20"
+                  className="box"
+               />
+               <input
+                  type="submit"
+                  value="Register New"
+                  name="submit"
+                  className="btn"
+               />
             </form>
-
          </section>
-
       </div>
-   )
-}
+   );
+};
 
-export default Register
+export default Register;

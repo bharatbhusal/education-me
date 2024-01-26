@@ -32,7 +32,7 @@ app.get('/users', (req, res) => {
 
 // Function to compare input string with names of users and return details of matching users
 const findMatchingUsers = (content, input) => {
-    return content.filter((each) => each.name[0] === input);
+    return content.filter((each) => each.email[0] === input)[0];
 };
 
 // GET endpoint to retrieve XML data
