@@ -51,12 +51,12 @@ const Login = () => {
       }
 
       if (credentials && user && credentials.password !== user.password[0])
-        throw new Error("Password did not match")
+        throw new Error("Incorrect Password")
     }
     catch (error)
     {
       console.error(error.message)
-      alert("Password did not match")
+      alert("Incorrect Password")
     }
   }, [user, credentials, navigate]);
 
