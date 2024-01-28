@@ -3,6 +3,7 @@ import Header from './components/Header'
 import SideBar from './components/SideBar'
 import Footer from './components/Footer'
 import { Outlet } from 'react-router-dom'
+import { UserDetailProvider } from './contexts/UserContext'
 
 const App = () => {
 
@@ -25,14 +26,16 @@ const App = () => {
 
     return (
         <div>
-            <SideBar />
-            <div>
-                <Header />
-                <div className='outlet'>
-                    <Outlet />
+            <UserDetailProvider>
+                <SideBar />
+                <div>
+                    <Header />
+                    <div className='outlet'>
+                        <Outlet />
+                    </div>
+                    <Footer />
                 </div>
-                <Footer />
-            </div>
+            </UserDetailProvider>
         </div>
     )
 }

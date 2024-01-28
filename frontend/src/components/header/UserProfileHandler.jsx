@@ -2,6 +2,7 @@ import React from 'react'
 import { CiUser } from 'react-icons/ci';
 import Pic1 from '../../images/pic-1.jpg'
 import { NavLink } from 'react-router-dom';
+import { useUserDetail } from '../../contexts/useUserContext';
 
 const handleUserButtonClick = () => {
     const profile = document.querySelector('.header .flex .profile');
@@ -10,12 +11,13 @@ const handleUserButtonClick = () => {
     search.classList.remove('active');
 };
 const UserProfile = () => {
+    const { userName, userMail } = useUserDetail()
 
     return (
 
         <div className="profile">
             <img src={Pic1} className="image" alt="" />
-            <h3 className="name">shaikh anas</h3>
+            <h3 className="name">{userName}</h3>
             <p className="role">student</p>
 
             <NavLink to={'/profile'} className="btn" onClick={handleUserButtonClick} >View Profile
