@@ -1,9 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import { Form, useNavigate } from 'react-router-dom';
+import { useUserDetail } from '../contexts/useUserContext';
+import { getUser } from "../controllers/getUser"
 
 const Login = () => {
   const navigate = useNavigate();
   const [user, setUser] = useState(null);
+  const [userMail] = useUserDetail()
   const [credentials, setCredentials] = useState({
     email: '',
     password: '',
@@ -11,28 +14,12 @@ const Login = () => {
 
   useEffect(() => {
     const fetchUserData = async () => {
-      try
-      {
-        const response = await fetch(`users/${credentials.email}`);
-        if (!response.ok)
-        {
-          throw new Error('Error fetching users');
-        }
-        if (response.status === 500)
-          throw new Error("Backend not connected")
-        const data = await response.json();
-        setUser(data);
-      } catch (error)
-      {
-        console.error(error.message);
-        alert("User not registered")
-      }
+      setUser(await getUser(credentials.email))
     };
 
-    if (credentials.email)
-    {
+    if (userMail)
       fetchUserData();
-    }
+
   }, [credentials.email]);
 
   const validateForm = async (e) => {
@@ -48,9 +35,7 @@ const Login = () => {
     try
     {
       if (user && credentials.email === user.email[0] && credentials.password === user.password[0])
-      {
         navigate('/');
-      }
 
       if (credentials && user && credentials.password !== user.password[0])
         throw new Error("Incorrect Password")
