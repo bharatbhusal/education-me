@@ -18,6 +18,8 @@ const Login = () => {
         {
           throw new Error('Error fetching users');
         }
+        if (response.status === 500)
+          throw new Error("Backend not connected")
         const data = await response.json();
         setUser(data);
       } catch (error)

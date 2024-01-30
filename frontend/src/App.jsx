@@ -4,6 +4,7 @@ import SideBar from './components/SideBar'
 import Footer from './components/Footer'
 import { Outlet } from 'react-router-dom'
 import { UserDetailProvider } from './contexts/UserContext'
+import { BackendDetailProvider } from './contexts/BackendContext'
 
 const App = () => {
 
@@ -26,16 +27,19 @@ const App = () => {
 
     return (
         <div>
-            <UserDetailProvider>
-                <SideBar />
-                <div>
-                    <Header />
-                    <div className='outlet'>
-                        <Outlet />
+            <BackendDetailProvider>
+
+                <UserDetailProvider>
+                    <SideBar />
+                    <div>
+                        <Header />
+                        <div className='outlet'>
+                            <Outlet />
+                        </div>
+                        <Footer />
                     </div>
-                    <Footer />
-                </div>
-            </UserDetailProvider>
+                </UserDetailProvider>
+            </BackendDetailProvider>
         </div>
     )
 }
