@@ -2,7 +2,7 @@
 
 const express = require('express');
 const router = express.Router();
-const reviewControllers = require('./reviewControllers');
+const reviewControllers = require('../controllers/reviewsControllers');
 
 // Create a new review
 router.post('/', reviewControllers.createReview);

@@ -52,6 +52,28 @@ exports.getUserById = (req, res) => {
     });
 };
 
+// Get user by ID
+exports.login = (req, res) => {
+    console.log(req.body)
+    const reqEmail = req.body.email;
+    const reqPassword = req.body.password;
+    console.log(reqEmail, reqPassword)
+    connection.query('SELECT password FROM users WHERE gmail = ?', [reqEmail], (error, results) => {
+        if (error)
+        {
+            console.error('Error getting user:', error);
+            res.status(500).send('Internal Server Error');
+            return;
+        }
+        if (results.length === 0)
+        {
+            res.status(404).send('User not found');
+            return;
+        }
+        res.json(results[0].password === reqPassword ? "Login Success" : "Login failed");
+    });
+};
+
 // Update user by ID
 exports.updateUser = (req, res) => {
     const userId = req.params.id;

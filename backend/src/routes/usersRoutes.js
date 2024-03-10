@@ -9,14 +9,15 @@ router.post('/', userControllers.createUser);
 
 // Get all users
 router.get('/', userControllers.getAllUsers);
+router.post('/login', userControllers.login);
 
-// Get user by ID
-router.get('/:id', userControllers.getUserById);
+// // Get user by ID
+// router.get('/:id', userControllers.getUserById);
 
-// Update user by ID
-router.put('/:id', userControllers.updateUser);
+// // Update user by ID
+// router.put('/:id', userControllers.updateUser);
 
-// Delete user by ID
-router.delete('/:id', userControllers.deleteUser);
+// // Delete user by ID
+// router.delete('/:id', userControllers.deleteUser);
 
 module.exports = router;
