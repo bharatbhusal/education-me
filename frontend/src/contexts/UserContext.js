@@ -3,9 +3,8 @@ import React, { createContext, ReactNode, useState, useEffect } from "react";
 export const UserContext = createContext()
 export const UserDetailProvider = ({ children }) => {
 
-    const [userName, setUserName] = useState(null)
-    const [userMail, setUserMail] = useState(null)
-    const [isLoggedIn, setIsLoggedIn] = useState(false)
+    const [userName, setUserName] = useState("user1")
+    const [userMail, setUserMail] = useState("user1@gmail.com")
 
 
     // Create the context value
@@ -14,8 +13,6 @@ export const UserDetailProvider = ({ children }) => {
         setUserName,
         userMail,
         setUserMail,
-        isLoggedIn,
-        setIsLoggedIn,
     };
 
     return (

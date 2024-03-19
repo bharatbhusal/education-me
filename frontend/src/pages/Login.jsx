@@ -1,53 +1,25 @@
 import React, { useEffect, useState } from 'react';
 import { Form, useNavigate } from 'react-router-dom';
 import { useUserDetail } from '../contexts/useUserContext';
-import { getUser } from "../controllers/getUser"
+import { login } from "../controllers/getUser"
 
 const Login = () => {
   const navigate = useNavigate();
-  const [user, setUser] = useState(null);
-  const [userMail] = useUserDetail()
-  const [credentials, setCredentials] = useState({
-    email: '',
-    password: '',
-  });
-
-  useEffect(() => {
-    const fetchUserData = async () => {
-      setUser(await getUser(credentials.email))
-    };
-
-    if (userMail)
-      fetchUserData();
-
-  }, [credentials.email]);
 
   const validateForm = async (e) => {
     e.preventDefault();
-    const loginData = {
-      email: e.target.email.value,
-      password: e.target.pass.value,
-    };
-    setCredentials(loginData);
-  };
-
-  useEffect(() => {
+    const formData = new FormData(e.target);
+    // Get the values of specific form fields by their names
+    const email = formData.get('email');
+    const password = formData.get('password');
     try
     {
-      if (user && credentials.email === user.email[0] && credentials.password === user.password[0])
-        navigate('/');
-
-      if (credentials && user && credentials.password !== user.password[0])
-        throw new Error("Incorrect Password")
-    }
-    catch (error)
+      await login(email, password)
+    } catch (error)
     {
-      console.error(error.message)
-      alert("Incorrect Password")
+      console.log(error.message)
     }
-  }, [user, credentials, navigate]);
-
-
+  };
 
   return (
     <div>
@@ -62,7 +34,7 @@ const Login = () => {
           <input
             type="email"
             name="email"
-            placeholder="enter your email"
+            placeholder="email"
             required
             maxLength="50"
             className="box"
@@ -70,8 +42,8 @@ const Login = () => {
           <p>Your Password <span>*</span></p>
           <input
             type="password"
-            name="pass"
-            placeholder="enter your password"
+            name="password"
+            placeholder="password"
             required
             maxLength="20"
             className="box"

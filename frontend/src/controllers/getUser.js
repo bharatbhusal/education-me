@@ -1,8 +1,16 @@
-export async function getUser(param) {
+export async function login(email, password) {
     try
     {
-        const response = await fetch(`users/${param}`);
-
+        const response = await fetch(`http://localhost:3031/users/login`, {
+            method: 'POST', // Specify the HTTP method (POST)
+            headers: {
+                'Content-Type': 'application/json' // Specify the content type as JSON
+            },
+            body: JSON.stringify({ // Convert the data to JSON format
+                email: email,
+                password: password
+            })
+        });
         if (!response.ok)
         {
             let errorMessage = '';
@@ -17,7 +25,6 @@ export async function getUser(param) {
                 default:
                     errorMessage = `Error: ${response.statusText}`;
             }
-
             throw new Error(errorMessage);
         }
 
@@ -28,4 +35,3 @@ export async function getUser(param) {
         console.error(`Error: ${error.message}`);
     }
 }
-
