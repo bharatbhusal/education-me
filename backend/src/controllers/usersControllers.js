@@ -1,7 +1,34 @@
 // userControllers.js
 const connection = require("../config/connectDB");
 
-// Create a new user
+/**
+ * Create a new user.
+ *
+ * @param {Object} req - The request object.
+ * @param {Object} res - The response object.
+ * @returns {Object} - The result of the user creation.
+ *
+ * @example
+ * // Request body
+ * {
+ *   "username": "john_doe",
+ *   "full_name": "John Doe",
+ *   "password": "password123",
+ *   "gmail": "john.doe@gmail.com"
+ * }
+ *
+ * // Response
+ * {
+ *   "fieldCount": 0,
+ *   "affectedRows": 1,
+ *   "insertId": 1,
+ *   "info": "",
+ *   "serverStatus": 2,
+ *   "warningStatus": 0
+ * }
+ *
+ * @throws {Error} - If there is an error creating the user.
+ */
 exports.createUser = (req, res) => {
 	const { username, full_name, password, gmail } = req.body;
 	connection.query(
@@ -62,7 +89,7 @@ exports.login = (req, res) => {
 	const reqPassword = req.body.password;
 	// console.log(reqEmail, reqPassword);
 	connection.query(
-		"SELECT password FROM users WHERE email = ?",
+		"SELECT password FROM users WHERE gmail = ?",
 		[reqEmail],
 		(error, results) => {
 			if (error) {
